@@ -9,16 +9,13 @@
     font-weight: $regular;
     font-size: rem(32);
     line-height: 1.25;
-
+    text-transform: uppercase;
+    
     @include mq(md) {
         font-size: rem(40);
     }
 }
 
-.section-title__accent {
-    color: $green;
-    text-transform: uppercase;
-}
 
 .section-title__sub {
     color: $green;
