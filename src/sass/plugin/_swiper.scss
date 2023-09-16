@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.swiper-button-prev,
+.swiper-button-next {
+    height: rem(80);
+    width: rem(80);
+}
+
+.swiper-button-prev {
+    position: absolute;
+    top: rem(-81);
+    left: auto;
+    right: rem(260);
+    margin-right: (80 / 1440) *100vw;
+}
+
+.swiper-button-next {
+    position: absolute;
+    top: rem(-81);
+    right: rem(180);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: rem(80);
+    width: rem(80);
+    margin: auto;
+}
+
+/* 前への矢印カスタマイズ */
+.swiper-button-prev::after {
+    background-image: url(../images/common/prev.png);
+}
+
+/* 次への矢印カスタマイズ */
+.swiper-button-next::after {
+    background-image: url(../images/common/next.png);
+}
+
+/* 画像サイズ調整 */
+.swiper-slide img {
+    height: auto;
+    width: 100%;
+}
+
+.swiper-wrapper {
+    margin-bottom: rem(40); //子要素での押出？card下のshadow表示のため
+}

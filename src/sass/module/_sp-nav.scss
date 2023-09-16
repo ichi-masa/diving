@@ -1,0 +1,70 @@
+@use "global" as *;
+
+
+.sp-nav {
+    color: $white;
+    position: fixed;
+    background-color: $green;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.sp-nav__logo {
+    width: rem(102);
+    line-height: 1;
+    margin: rem(21) rem(15);
+}
+
+.sp-nav__wrapper {
+    display: flex;
+    justify-content: center;
+    line-height: 1.125;
+    margin-top: rem(24);
+}
+
+
+.sp-nav__left,
+.sp-nav__right {
+    width: 50%; 
+}
+
+.sp-nav__menu-title {
+    font-weight: $bold;
+    position: relative;
+    padding-left: rem(22);
+    margin-top: rem(40);
+}
+
+.sp-nav__menu-title--top {
+    margin-top: 0; // navの一番上のmarginを0にする
+}
+
+.sp-nav__menu-title::before {
+    background-image: url(../images/common/starfish.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: '';
+    width: rem(18);
+    height: rem(18);
+    top: 0;
+    left: 0;
+}
+
+
+.sp-nav__item--second {
+    font-weight: $regular;
+    margin-top: rem(24);
+}
+
+.sp-nav.active {
+    opacity: 1;
+    visibility: visible;
+}

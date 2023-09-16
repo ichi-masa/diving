@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.header {
+    width: 100%;
+    height: rem(80);
+    position: fixed;
+    background-color: rgba(13, 14, 54, 0.68);
+}
+
+.header__logo {
+    width: rem(102);
+    line-height: 1;
+    margin: rem(21) rem(15);
+}
+
+.header__nav-button {
+    position: absolute;
+    top: rem(28);
+    right: rem(15);
+}
