@@ -19,15 +19,30 @@
     margin: 0 auto;
 }
 
+.footer__heading {
+    @include mq(md) {
+        display: flex;
+        align-items: end;
+    }
+}
+
 .footer__logo {
-    width: rem(102);
+    width: rem(120);
     line-height: 1;
+
+    @include mq(md) {
+        width: rem(200);
+    }
 }
 
 .footer__sns {
     display: flex;
     gap: rem(16);
     padding-top: rem(16);
+    
+    @include mq(md) {
+        margin-left: rem(40);
+    }
 }
 
 .footer__sns-icon {
