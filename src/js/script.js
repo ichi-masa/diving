@@ -20,10 +20,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 // mainview スライダー（Swiper）//
     const mvSwiper = new Swiper(".mainview__Swiper", {
         loop: true,
-        speed: 5000,
+        effect: 'fade',
         autoplay: {
-            delay: 0,
+            delay: 5000,
+            disableOnInteraction: false
         },
+        speed: 3000,
     });
 // campaign スライダー（Swiper）//
     const campaignSwiper = new Swiper(".campaign__Swiper", {
@@ -34,17 +36,17 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+        },
+        speed: 2000,
 
         breakpoints: {
             768: {
-                slidesPerView: 2.2,
-                spaceBetween: 32,
-            },
-
-            1150: {
                 slidesPerView: 3.4,
                 spaceBetween: 40,
-            }
+            },
         }
     });
 });

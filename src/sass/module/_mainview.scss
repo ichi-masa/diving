@@ -4,53 +4,30 @@
     width: 100%;
     height: 100vh;
     position: relative;
-    z-index: -1;
 }
 
-.mainview__sp-images {
+.mainview__wrapper {
     height: inherit;
-    @include mq(md) {
-        display: none;
-    }
 }
 
 .mainview__Swiper {
     height: inherit;
 }
 
-.mainview__pc-images {
+.mainview__image {
+    height: inherit
+} 
+
+.mainview__image picture {
+    display: block;
     height: inherit;
-    display: none;
-    
-    @include mq(md) {
-        display: block;
-    }
 }
 
-.mainview__sp-image {
-    height: 100vh; //気に入らない
-    aspect-ratio: 375 / 667;
-    overflow: hidden;
-} 
-
-.mainview__sp-image img {
+.mainview__image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-.mainview__pc-image {
-    height: 100vh; //気に入らない
-    aspect-ratio: 1440 / 768;
-    overflow: hidden;
-} 
-
-.mainview__pc-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 
 .mainview__title-block {
     position: absolute;

@@ -3,8 +3,14 @@
 .footer {
     background-color: $green;
     color: $white;
-    position: relative;
-    z-index: -1;
+}
+
+.footer__layout {
+    margin-top: rem(100);
+
+    @include mq(md) {
+        margin-top: rem(160);
+    }
 }
 
 .footer__inner {

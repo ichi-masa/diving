@@ -49,7 +49,7 @@
 }
 
 .button span::after {
-    background-image: url(../images/common/arrow-white.png);
+    background-image: url(../images/common/arrow_white.png);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -61,5 +61,5 @@
 }
 
 .button:hover span::after {
-    background-image: url(../images/common/arrow-green.png); /* ホバー時の背景画像 */
+    background-image: url(../images/common/arrow_green.png); /* ホバー時の背景画像 */
 }

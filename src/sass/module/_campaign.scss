@@ -1,8 +1,8 @@
 @use "global" as *;
 
-.campaign__inner {
+.campaign__layout {
     margin-top: rem(40);
-
+    
     @include mq(md) {
         margin-top: rem(120);
     }
@@ -10,15 +10,33 @@
 
 .campaign__content {
     margin-top: rem(24);
-    margin-left: rem(15);
     position: relative;
-
+    
     @include mq(md) {
         margin-top: rem(40);
-        margin-left: rem(180);
     }
+}
+
+.campaign__Swiper {
+    margin-right: calc(50% - 50vw);
+}
+
+.campaign__swiper-wrapper {
+    margin-bottom: rem(10);
+}
+
+.campaign__swiper-button {
+    position: absolute;
+    top: rem(-80);
+    right: 0;
+    width: rem(240);
 }
 
 .campaign__button {
     text-align: center;
+    margin-top: rem(30);
+
+    @include mq(md) {
+        margin-top: rem(70);
+    }
 }

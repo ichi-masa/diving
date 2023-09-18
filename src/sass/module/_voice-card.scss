@@ -2,28 +2,30 @@
 
 .voice-card {
     box-shadow: 0 4px 4px rgba(0,0,0,0.25);
-    width: rem(300); //仮
 }
 
 .voice-card__inner {
     padding: rem(15) rem(16) rem(24);
+
+    @include mq(md) {
+        padding: rem(24);
+    }
 }
 
 .voice-card__title-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: rem(15);
 
     @include mq(md) {
-        align-items: baseline;
+        align-items: flex-end;
     }
 }
 
 .voice-card__title-block {
-    width: 43.2%; //後で変更
+    width: 47.60%;
 
     @include mq(md) {
-        margin-bottom: rem(8);
+        width: 58.47%;
     }
 }
 
@@ -60,7 +62,12 @@
 .voice-card__image {
     aspect-ratio: 151 / 117;
     overflow: hidden;
-    width: 43.8%; //後で変更
+    width: 48.24%;
+
+    @include mq(md) {
+        aspect-ratio: 180 / 140;
+        width: 38.14%;
+    }
 }
 
 .voice-card__image img {
@@ -70,7 +77,12 @@
 }
 
 .voice-card__text {
+    margin-top: rem(15);
     font-size: rem(16);
     font-weight: $regular;
     line-height: 1.5;
+
+    @include mq(md) {
+        margin-top: rem(40);
+    }
 }

@@ -8,4 +8,8 @@
     color: $green;
     padding: rem(4) rem(12);
     border: 1px solid $green;
+
+    @include mq(md) {
+        padding: rem(6) rem(16);
+    }
 }
