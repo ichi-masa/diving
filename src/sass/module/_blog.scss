@@ -1,10 +1,30 @@
 @use "global" as *;
 
-.blog__layout {
+
+.blog {
     position: relative;
 }
 
-.blog__layout::after {
+.blog__content {
+    position: relative;
+}
+
+.blog__content::before {
+    @include mq(md) {
+        position: absolute;
+        background-image: url(../images/common/fish1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+        width:rem(437) ;
+        height: rem(201);
+        top: rem(-220);
+        left: calc(50% - min(50vw, 60%));
+        z-index: 0;
+    }
+}
+
+.blog::after {
     @include mq(md) {
         position: absolute;
         content: '';
@@ -15,7 +35,7 @@
         top: 0;
         left: 0;
         height: rem(500);
-        z-index: -1;
+        z-index: -2;
     }
 }
 

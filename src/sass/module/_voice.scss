@@ -6,6 +6,38 @@
     @include mq(md) {
         margin-top: rem(140);
     }
+
+}
+.voice__content {
+    position: relative;
+}
+
+.voice__content::before {
+    @include mq(md) {
+        position: absolute;
+        background-image: url(../images/common/fish2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+        width:rem(301) ;
+        height: rem(135);
+        top: rem(-200);
+        left: calc(50% - min(50vw, 60%));
+    }
+}
+
+.voice__content::after {
+    @include mq(md) {
+        position: absolute;
+        background-image: url(../images/common/sea-horse.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+        width:rem(71) ;
+        height: rem(161);
+        bottom: rem(-100);
+        right: calc(50% - min(50vw, 50%));
+    }
 }
 
 .voice__items {

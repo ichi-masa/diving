@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.pagetop__button {
+    display: block;
+    position: fixed;
+    width: rem(48);
+    height: rem(48);
+    bottom: rem(15);
+    right: rem(15);
+    z-index: 4;
+
+    @include mq(md) {
+        width: rem(80);
+        height: rem(80);
+        bottom: rem(20);
+        right: rem(20);
+    }
+}

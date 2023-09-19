@@ -1,5 +1,6 @@
 @use "global" as *;
 
+
 .about__layout {
     margin-top: rem(80);
     
@@ -11,9 +12,24 @@
 .about__content {
     margin-top: rem(24);
     position: relative;
-
+    
     @include mq(md) {
         margin-top: rem(40);
+    }
+}
+
+.about__content::after {
+    @include mq(md) {
+        position: absolute;
+        background-image: url(../images/common/coral.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+        width:rem(194) ;
+        height: rem(181);
+        bottom: rem(-90);
+        right: calc(50% - min(50vw, 60%));
+        z-index: 2;
     }
 }
 
@@ -68,7 +84,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-40%, -50%);
-        z-index: 4;
+        z-index: 3;
     }
 }
 
