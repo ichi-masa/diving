@@ -30,6 +30,7 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
+  <!-- header -->
   <header class="header">
     <h1 class="header__logo"><a href="#" class="header__link"><img src="./assets/images/common/logo.png" alt="CodeUps"></a></h1>
     <!-- hamburger -->
@@ -381,7 +382,7 @@
           <h2 class="section-title__sub">ダイビング情報</h2>
         </div>
         <div class="information__content">
-          <div class="information__image">
+          <div class="information__image color-animation">
             <img src="./assets/images/common/information.jpg" alt="">
           </div>
           <div class="information__text-content">
@@ -400,6 +401,7 @@
       </div> <!-- information__inner -->
     </section>
 
+    <!-- blog -->
     <section class="blog blog__layout">
       <div class="blog__inner inner">
         <div class="blog__title section-title">
@@ -457,6 +459,7 @@
       </div> <!-- blog__inner -->
     </section>
 
+    <!-- voice -->
     <section class="voice voice__layout">
       <div class="voice__inner inner">
         <div class="voice__title section-title">
@@ -505,6 +508,7 @@
       </div> <!-- voice__inner -->
     </section>
 
+    <!-- price -->
     <section class="price price__layout">
       <div class="price__inner inner">
         <div class="price__title section-title">
@@ -512,6 +516,80 @@
           <h2 class="section-title__sub">料金一覧</h2>
         </div>
         <div class="price__content">
+          <div class="price__content-inner">
+            <div class="price__image">
+              <picture>
+                <source srcset="./assets/images/common/price_pc.jpg" media="(min-width:768px)">
+                <img src="./assets/images/common/price_sp.jpg" alt="">
+              </picture>
+            </div>
+            <div class="price__items">
+              <div class="price__item">
+                <h3 class="price__item-title">ライセンス講習</h3>
+                <dl class="price__menu">
+                  <dt class="price__menu-item">オープンウォーターダイバーコース</dt>
+                  <dd class="price__menu-price">&yen50,000</dd>
+                </dl>
+                <dl class="price__menu">
+                  <dt class="price__menu-item">アドバンスドオープンウォーターコース</dt>
+                  <dd class="price__menu-price">&yen60,000</dd>
+                </dl>
+                <dl class="price__menu">
+                  <dt class="price__menu-item">レスキュー＋EFRコース</dt>
+                  <dd class="price__menu-price">&yen70,000</dd>
+                </dl>
+              </div>
+              <div class="price__item">
+                <h3 class="price__item-title">体験ダイビング</h3>
+                <dl class="price__menu">
+                  <dt class="price__menu-item">ビーチ体験ダイビング(半日)</dt>
+                  <dd class="price__menu-price">&yen7,000</dd>
+                </dl>
+                <dl class="price__menu">
+                  <dt class="price__menu-item">ビーチ体験ダイビング(1日)</dt>
+                  <dd class="price__menu-price">&yen14,000</dd>
+                </dl>
+                <dl class="price__menu">
+                  <dt class="price__menu-item">ボート体験ダイビング(半日)</dt>
+                  <dd class="price__menu-price">&yen10,000</dd>
+                </dl>
+                <dl class="price__menu">
+                  <dt class="price__menu-item">ボート体験ダイビング(1日)</dt>
+                  <dd class="price__menu-price">&yen18,000</dd>
+                </dl>
+              </div>
+              <div class="price__item">
+                <h3 class="price__item-title">ファンダイビング</h3>
+                <dl class="price__menu">
+                  <dt class="price__menu-item">ビーチダイビング(2ダイブ)</dt>
+                  <dd class="price__menu-price">&yen14,000</dd>
+                </dl>
+                <dl class="price__menu">
+                  <dt class="price__menu-item">ボートダイビング(2ダイブ)</dt>
+                  <dd class="price__menu-price">&yen18,000</dd>
+                </dl>
+                <dl class="price__menu">
+                  <dt class="price__menu-item">スペシャルダイビング(2ダイブ)</dt>
+                  <dd class="price__menu-price">&yen24,000</dd>
+                </dl>
+                <dl class="price__menu">
+                  <dt class="price__menu-item">ナイトダイビング(1ダイブ)</dt>
+                  <dd class="price__menu-price">&yen10,000</dd>
+                </dl>
+              </div>
+              <div class="price__item">
+                <h3 class="price__item-title">スペシャルダイビング</h3>
+                <dl class="price__menu">
+                  <dt class="price__menu-item">貸切ダイビング(2ダイブ)</dt>
+                  <dd class="price__menu-price">&yen24,000</dd>
+                </dl>
+                <dl class="price__menu">
+                  <dt class="price__menu-item">1日ダイビング(3ダイブ)</dt>
+                  <dd class="price__menu-price">&yen32,000</dd>
+                </dl>
+              </div>
+            </div> <!-- price__items -->
+          </div> <!-- price__content-inner -->
           <div class="price__button">
             <a class="button">
               <span>View more</span>
@@ -521,12 +599,24 @@
       </div> <!-- price__inner -->
     </section>
 
+    <!-- contact -->
     <section class="contact contact__layout">
       <div class="contact__inner inner">
         <div class="contact__content">
           <div class="contact__content-left">
             <div class="contact__logo">
               <img src="./assets/images/common/contact_logo.png" alt="">
+            </div>
+            <div class="contact__information">
+              <div class="contact__information-info">
+                <p class="contact__information-text">沖縄県那覇市1-1</p>
+                <p class="contact__information-text">TEL:0120-000-0000</p>
+                <p class="contact__information-text">営業時間:8:30-19:00</p>
+                <p class="contact__information-text">定休日:毎週火曜日</p>
+              </div>
+              <div class="contact__information-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28636.50104094062!2d127.66410247938657!3d26.210902335542897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5697141a6b58b%3A0x2cd8aff616585e98!2z5rKW57iE55yM6YKj6KaH5biC!5e0!3m2!1sja!2sjp!4v1695087083014!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
             </div>
           </div>
           <div class="contact__content-right">
@@ -546,7 +636,14 @@
     </section>
 
   </main>
+
+  <!-- footer -->
   <footer class="footer footer__layout">
+    <div class="footer__pagetop pagetop js-pagetop">
+      <a class="pagetop__button" href="#top">
+        <img src="./assets/images/common/to-top.png" alt="">
+      </a>
+    </div>
     <div class="footer__inner">
       <div class="footer__heading">
         <div class="footer__logo"><a href="#" class="header__link"><img src="./assets/images/common/logo.png" alt="CodeUps"></a></div>
