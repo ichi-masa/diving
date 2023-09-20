@@ -1,10 +1,5 @@
 @use "global" as *;
 
-
-.contact {
-    // filter: drop-shadow(0 rem(4) rem(4) rgba(0,0,0,0.25)); //いらない？デザインミス？
-}
-
 .contact__layout {
     margin-top: rem(80);
 
@@ -14,30 +9,38 @@
 }
 
 .contact__content {
+    padding-bottom: rem(4);
     display: flex;
     flex-direction: column;
+    position: relative;
+    filter: drop-shadow(0 rem(4) rem(4) rgba(0,0,0,0.25));
 
     @include mq(md) {
         flex-direction: row;
         padding: rem(80) rem(50);
         box-shadow: 0 rem(4) rem(10) rgba(0,0,0,0.25);
-        position: relative;
+        filter: none;
     }
 }
 
 .contact__content::before {
-    @include mq(md) {
         position: absolute;
         background-image: url(../images/common/fish3.png);
         background-repeat: no-repeat;
         background-size: contain;
         content: '';
-        width:rem(301) ;
-        height: rem(138);
-        top: rem(-30);
-        right: calc(50% - min(50vw, 60%));
+        width:rem(109) ;
+        height: rem(50);
+        top: rem(-26);
+        right: calc(50% - min(50vw, 50%));
         z-index: 0;
-    }
+
+        @include mq(md) {
+            width:rem(301) ;
+            height: rem(138);
+            top: rem(-40);
+            right: calc(50% - min(50vw, 62%));
+        }
 }
 
 .contact__content-left {
@@ -52,7 +55,7 @@
 }
 
 .contact__logo {
-    padding-bottom: rem(6);
+    padding-bottom: rem(5);
     border-bottom: 1px solid $green;
     line-height: 1;
 
@@ -128,7 +131,7 @@
 
 .contact__text {
     text-align: center;
-    margin-top: rem(8);
+    margin-top: rem(5);
     font-size: rem(14);
     color: $green;
     line-height: 1.2857;

@@ -11,13 +11,18 @@
 }
 
 .blog-card__body {
-    margin-top: rem(24);
+    margin-top: rem(18);
+
+    @include mq(md) {
+        margin-top: rem(16);
+    }
 }
 
 .blog-card__date {
     font-size: rem(12);
     font-weight: $regular;
     line-height: 1.5;
+    font-family: $english-font-family;
 }
 
 .blog-card__title {

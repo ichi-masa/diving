@@ -14,6 +14,7 @@
     
     @include mq(md) {
         margin-top: rem(40);
+        padding-bottom: rem(4);
     }
 }
 
@@ -27,16 +28,18 @@
 
 .campaign__swiper-button {
     position: absolute;
-    top: rem(-80);
-    right: 0;
-    width: rem(240);
+    top: rem(-84);
+    right: rem(-10);
+    width: rem(260);
 }
 
 .campaign__button {
     text-align: center;
     margin-top: rem(30);
+    padding-bottom: rem(4);
 
     @include mq(md) {
         margin-top: rem(70);
+        padding-bottom: 0;
     }
 }

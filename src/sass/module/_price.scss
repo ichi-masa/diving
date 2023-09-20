@@ -13,8 +13,13 @@
 }
 
 .price__inner {
-    padding-top: rem(100);
-    padding-bottom: rem(100);
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+
+    @include mq(md) {
+        padding-top: rem(100);
+        padding-bottom: rem(100);
+    }
 }
 
 .price__content {
@@ -35,8 +40,8 @@
         content: '';
         width:rem(437) ;
         height: rem(201);
-        bottom: rem(-20);
-        left: calc(50% - min(50vw, 60%));
+        bottom: rem(-42);
+        left: calc(50% - min(50vw, 57.5%));
         z-index: 0;
     }
 }
@@ -83,7 +88,7 @@
     font-size: rem(16);
     font-weight: $bold;
     line-height: 1.5;
-    padding-bottom: rem(4);
+    padding-bottom: rem(3);
     border-bottom: 1px solid $green;
 }
 
@@ -94,10 +99,16 @@
     font-weight: $regular;
     line-height: 1.71428571;
     margin-top: rem(8);
+
+    @include mq(md) {
+        font-size: rem(16);
+        line-height: 1.5;
+    }
 }
 
 .price__button {
     margin-top: rem(40);
+    padding-bottom: rem(4);
     text-align: center;
 
     @include mq(md) {

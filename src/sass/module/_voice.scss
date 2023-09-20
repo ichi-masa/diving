@@ -10,6 +10,7 @@
 }
 .voice__content {
     position: relative;
+    padding-bottom: rem(4);
 }
 
 .voice__content::before {
@@ -21,8 +22,8 @@
         content: '';
         width:rem(301) ;
         height: rem(135);
-        top: rem(-200);
-        left: calc(50% - min(50vw, 60%));
+        top: rem(-214);
+        left: calc(50% - min(50vw, 57%));
     }
 }
 
@@ -35,7 +36,7 @@
         content: '';
         width:rem(71) ;
         height: rem(161);
-        bottom: rem(-100);
+        bottom: rem(-65);
         right: calc(50% - min(50vw, 50%));
     }
 }
