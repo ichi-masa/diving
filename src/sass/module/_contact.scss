@@ -135,9 +135,14 @@
     font-size: rem(14);
     color: $green;
     line-height: 1.2857;
+
+    @include mq(md) {
+        margin-top: rem(8);
+    }
 }
 
 .contact__button {
     margin-top: rem(40);
+    margin-right: rem(5);
     text-align: center;
 }

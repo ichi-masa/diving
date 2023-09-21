@@ -2,7 +2,6 @@
 
 .button {
     background-color: $green;
-    // border: rem(1) solid $green;
     color: $white;
     display: inline-block;
     font-family: $english-font-family;
@@ -55,9 +54,9 @@
     position: absolute;
     content: '';
     width: rem(40);
-    height: rem(6);
+    height: rem(8);
     top: 40%;
-    right: rem(40);
+    right: rem(38);
 }
 
 .button:hover span::after {

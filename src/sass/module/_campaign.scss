@@ -35,11 +35,11 @@
 
 .campaign__button {
     text-align: center;
-    margin-top: rem(30);
+    margin-top: rem(31);
+    margin-right: rem(5);
     padding-bottom: rem(4);
 
     @include mq(md) {
-        margin-top: rem(70);
-        padding-bottom: 0;
+        margin-top: rem(66)
     }
 }

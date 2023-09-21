@@ -1,6 +1,5 @@
 @use "global" as *;
 
-
 .sp-nav {
     color: $white;
     position: fixed;
@@ -10,16 +9,19 @@
     right: 0;
     bottom: 0;
     z-index: 4;
-    overflow: hidden;
+    overflow: auto;
     visibility: hidden;
     opacity: 0;
     transition: all 0.4s;
 }
 
+.sp-nav__header {
+    width: 100%;
+    height: rem(80);
+}
+
 .sp-nav__logo {
-    width: rem(102);
-    line-height: 1;
-    margin: rem(21) rem(15);
+    padding: rem(21) rem(15);
 }
 
 .sp-nav__wrapper {
@@ -27,6 +29,7 @@
     justify-content: center;
     line-height: 1.125;
     margin-top: rem(24);
+    margin-bottom: rem(24);
 }
 
 

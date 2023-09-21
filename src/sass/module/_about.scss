@@ -116,6 +116,7 @@
 .about__button {
     text-align: center;
     margin-top: rem(50);
+    margin-right: rem(5);
     padding-bottom: rem(4);
     
     @include mq(md) {

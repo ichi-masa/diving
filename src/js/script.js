@@ -22,10 +22,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     const mvSwiper = new Swiper(".mainview__Swiper", {
         loop: true,
         effect: 'fade',
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false
-        },
+        // autoplay: {
+        //     delay: 5000,
+        //     disableOnInteraction: false
+        // },
         speed: 3000,
     });
 // campaign スライダー（Swiper）//
@@ -37,10 +37,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false
-        },
+        // autoplay: {
+        //     delay: 3000,
+        //     disableOnInteraction: false
+        // },
         speed: 2000,
 
         breakpoints: {

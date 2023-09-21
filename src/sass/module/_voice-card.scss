@@ -60,14 +60,25 @@
     }
 }
 
+.voice-card__image-wrapper {
+    width: 48.24%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+
+    @include mq(md) {
+        width: 38.14%;
+    }
+}
+
 .voice-card__image {
+    position: absolute;
+    bottom: 0;
     aspect-ratio: 151 / 117;
     overflow: hidden;
-    width: 48.24%;
 
     @include mq(md) {
         aspect-ratio: 180 / 140;
-        width: 38.14%;
     }
 }
 

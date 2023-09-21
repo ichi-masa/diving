@@ -2,20 +2,32 @@
 
 .header {
     width: 100%;
-    height: rem(90);
+    height: rem(80);
     position: fixed;
     background-color: rgba(13, 14, 54, 0.68);
     z-index: 4;
+
+    @include mq(md) {
+        height: rem(90);
+    }
 }
 
 .header__logo {
-    width: rem(102);
-    line-height: 1;
     margin: rem(21) rem(15);
 
     @include mq(md) {
         width: rem(133);
         margin: rem(21) rem(40);
+    }
+}
+
+.header__link {
+    display: block;
+    width: rem(102);
+    line-height: 1;
+
+    @include mq(md) {
+        width: rem(133);
     }
 }
 

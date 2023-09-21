@@ -4,7 +4,7 @@
 .pc-nav {
     color: $white;
     position: absolute;
-    top: 50%;
+    top: 51%;
     right: rem(40);
     transform: translateY(-50%);
 }
@@ -15,7 +15,7 @@
 }
 
 .pc-nav__item:nth-child(n + 2) {
-    margin-left: rem(40);
+    margin-left: rem(40.2);
 }
 
 .pc-nav__link {

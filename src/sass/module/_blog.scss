@@ -57,7 +57,7 @@
     margin-top: rem(24);
     display: flex;
     flex-direction: column;
-    gap: rem(38);
+    gap: rem(39);
 
     @include mq(md) {
         margin-top: rem(80);
@@ -67,7 +67,8 @@
 }
 
 .blog__button {
-    margin-top: rem(40);
+    margin-top: rem(39);
+    margin-right: rem(5);
     text-align: center;
     padding-bottom: rem(4);
 
