@@ -50,28 +50,33 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         },
         speed: 3000,
     });
+
 // campaign スライダー（Swiper）//
     const campaignSwiper = new Swiper(".campaign__Swiper", {
         loop: true,
-        slidesPerView: 1.26,
+        slidesPerView: "1.26",
         spaceBetween: 24,
+        speed: 2000,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false
-        },
-        speed: 2000,
+        // autoplay: {
+        //     delay: 3000,
+        //     disableOnInteraction: false
+        // },
 
         breakpoints: {
             768: {
-                slidesPerView: 3.48,
+                slidesPerView: "3.48",
                 spaceBetween: 40,
             },
+            1920: {
+                slidesPerView: "5"
+            }
         }
     });
+
 
     //要素の取得とスピードの設定
     const box = $('.js-colorbox'),
