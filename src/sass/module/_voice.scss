@@ -53,9 +53,15 @@
     }
 }
 
+.voice__item {
+    @include mq(md) {
+        width: calc((100% - rem(40)) / 2);
+    }
+}
+
 .voice__button {
-    margin-top: rem(40);
-    margin-right: rem(5);
+    margin-top: rem(39);
+    margin-right: rem(4);
     text-align: center;
 
     @include mq(md) {

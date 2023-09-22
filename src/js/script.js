@@ -1,6 +1,28 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
+// ローディングアニメーション
+    // $(function() {
+    //     setTimeout(function(){
+    //         $('.js-loading-title').fadeIn(3000);
+    //     },1000);
+    //     setTimeout(function(){
+    //         $('.js-loading-title').fadeOut(1000);
+    //     },2500);
+    // });
+
+    // function loadingStop() {
+    //     $('#loadingWrap').addClass('loadingNone');  // 'loadingNone' クラスを追加
+    
+    //     // 1秒後に display: none; を設定
+    //     setTimeout(function() {
+    //         $('#loadingWrap').css('display', 'none');
+    //     }, 1000);
+    //     }
+    
+    //     $(window).on('load', function() {
+    //     loadingStop();
+    //     });
 
 // ハンバーガーメニュー //
     $(function(){

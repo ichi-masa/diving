@@ -66,9 +66,15 @@
     }
 }
 
+.blog__item {
+    @include mq(md) {
+        width: calc((100% -  rem(40) * 2) / 3);
+    }
+}
+
 .blog__button {
     margin-top: rem(39);
-    margin-right: rem(5);
+    margin-right: rem(4);
     text-align: center;
     padding-bottom: rem(4);
 

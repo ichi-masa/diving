@@ -15,7 +15,7 @@
 }
 
 .pc-nav__item:nth-child(n + 2) {
-    margin-left: rem(40.2);
+    margin-left: (40.2 / 1440) *100vw;
 }
 
 .pc-nav__link {

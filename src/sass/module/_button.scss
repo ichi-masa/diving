@@ -8,7 +8,7 @@
     font-family: $english-font-family;
     font-size: rem(14);
     line-height: calc(22 / 14);
-    padding: rem(16) rem(88) rem(16) rem(40);
+    padding: rem(15) rem(88) rem(15) rem(40);
     position: relative;
     cursor: pointer;
     z-index: 1;
@@ -21,8 +21,8 @@
     content: '';
     top: rem(4);
     left: rem(4);
-    right: rem(-4);
-    bottom: rem(-4);
+    right: rem(-5);
+    bottom: rem(-5);
     z-index: -2;
 }
 
