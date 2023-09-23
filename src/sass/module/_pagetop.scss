@@ -17,9 +17,14 @@
     display: block;
     width: rem(48);
     height: rem(48);
+    transition: all 0.2s;
 
     @include mq(md) {
         width: rem(80);
         height: rem(80);
     }
+}
+
+.pagetop__button:hover {
+    transform: scale(1.05);
 }

@@ -61,10 +61,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-        // autoplay: {
-        //     delay: 3000,
-        //     disableOnInteraction: false
-        // },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+        },
 
         breakpoints: {
             768: {

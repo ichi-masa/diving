@@ -16,11 +16,12 @@
 
 .footer__inner {
     padding: rem(48) 0 rem(56);
-    max-width: $inner;
+    max-width: rem(600);
     margin: 0 auto;
 
     @include mq(md) {
         padding: rem(80) rem(180) ;
+        max-width: $inner;
     }
 }
 
@@ -105,6 +106,15 @@
     @include mq(md) {
         padding-left: 0;
     }
+}
+
+.footer__link {
+    transition: all 0.2s;
+}
+
+.footer__link:hover,
+.footer__link--second:hover {
+    opacity: 0.6;
 }
 
 .footer__menu-title {

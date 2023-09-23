@@ -38,6 +38,11 @@
     width: 50%; 
 }
 
+.sp-nav__link:hover,
+.sp-nav__link--second:hover {
+    opacity: 0.6;
+}
+
 .sp-nav__menu-title {
     font-weight: $bold;
     position: relative;

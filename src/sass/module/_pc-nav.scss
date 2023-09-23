@@ -2,16 +2,22 @@
 
 
 .pc-nav {
+    height: inherit;
     color: $white;
     position: absolute;
-    top: 51%;
+    top: 50%;
     right: rem(40);
     transform: translateY(-50%);
 }
 
 
 .pc-nav__list {
+    height: inherit;
     display: flex;
+}
+
+.pc-nav__item {
+    height: inherit;
 }
 
 .pc-nav__item:nth-child(n + 2) {
@@ -19,6 +25,7 @@
 }
 
 .pc-nav__link {
+    height: inherit;
     display: inline-block;
     text-align: center;
     position: relative;

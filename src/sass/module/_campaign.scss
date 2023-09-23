@@ -33,6 +33,16 @@
     width: rem(260);
 }
 
+.campaign__prev-button,
+.campaign__next-button {
+    transition: all 0.2s;
+}
+
+.campaign__prev-button:hover,
+.campaign__next-button:hover {
+    transform: scale(1.05);
+}
+
 .campaign__button {
     text-align: center;
     margin-top: rem(31);
