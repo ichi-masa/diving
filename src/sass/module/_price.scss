@@ -56,7 +56,8 @@
     
     @include mq(md) {
         flex-direction: row-reverse;
-        justify-content: space-between;
+        gap: rem(93);
+        // justify-content: space-between;
     }
 }
 
@@ -108,6 +109,10 @@
         font-size: rem(16);
         line-height: 1.5;
     }
+}
+
+.price__menu-price {
+    margin-left: rem(25);
 }
 
 .price__button {

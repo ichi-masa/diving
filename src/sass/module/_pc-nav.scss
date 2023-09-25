@@ -14,6 +14,7 @@
 .pc-nav__list {
     height: inherit;
     display: flex;
+    align-items: center;
 }
 
 .pc-nav__item {
@@ -25,15 +26,17 @@
 }
 
 .pc-nav__link {
-    height: inherit;
-    display: inline-block;
+    display: block;
     text-align: center;
+    width: 100%;
+    padding-top: rem(26.5);
+    padding-bottom: rem(26.5);
     position: relative;
 }
 
 .pc-nav__link::after {
     position: absolute;
-    bottom: rem(-4);
+    bottom: rem(22.5);
     left: 0;
     content: '';
     width: 100%;

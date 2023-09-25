@@ -19,11 +19,9 @@
 }
 
 .header__logo {
-    width: rem(102);
     margin-left: rem(15);
 
     @include mq(md) {
-        width: rem(133);
         margin-left: rem(40);
     }
 }

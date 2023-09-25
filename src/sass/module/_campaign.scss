@@ -1,5 +1,10 @@
 @use "global" as *;
 
+.campaign {
+    overflow: hidden;
+    height: 100%;
+}
+
 .campaign__layout {
     margin-top: rem(40);
     
@@ -24,6 +29,11 @@
 
 .campaign__swiper-wrapper {
     margin-bottom: rem(10);
+    padding-left: rem(4);
+}
+
+.campaign__item {
+    height: auto;
 }
 
 .campaign__swiper-button {
