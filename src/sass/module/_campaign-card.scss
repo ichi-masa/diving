@@ -6,9 +6,10 @@
     height: 100%;
 }
 
-.campaign-card__content {
+.campaign-card__wrapper {
     display: flex;
     flex-direction: column;
+    height: inherit;
 }
 
 .campaign-card__image {
@@ -24,19 +25,27 @@
 
 .campaign-card__body {
     padding: rem(16) rem(16) rem(24);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 
     @include mq(md) {
         padding: rem(24) rem(16) rem(40);
     }
 }
 
+.campaign-card__tag {
+    width: max-content;
+}
+
 .campaign-card__title {
     font-size: rem(16);
     font-weight: $medium;
     line-height: 1.5;
-    margin-top: rem(4);
     padding-bottom: rem(8);
+    margin-top: ren(4);
     border-bottom: 1px solid $green;
+    flex-grow: 1;
 }
 
 .campaign-card__text {
