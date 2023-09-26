@@ -6,26 +6,60 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 5;
+}
+
+.loading__wrapper {
+    height: inherit;
 }
 
 .loading__image-wrapper {
     display: flex;
-    align-items: end;
+    height: inherit;
 }
 
-.loading__title-block {
+.loading__left,
+.loading__right {
+    height: inherit;
+    aspect-ratio: 720 / 768;
+    overflow: hidden;
+    display: none;
+}
+
+.loading__left img,
+.loading__right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.loading__left img {
+    object-position: right;
+}
+
+.loading__right img {
+    object-position: left;
+}
+
+.loading__title {
     position: absolute;
     top: 49.8%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: $green;
-    z-index: 1;
+    z-index: -1;
     text-align: center;
+    display: none;
 }
 
-.loading__title {
+.loading__title--white {
+    color: $white;
+    z-index: 2;
+    display: none;
+}
+
+.loading__main-title {
     font-family: $number-font-family;
     text-transform: uppercase;
     font-size: rem(80);
@@ -39,4 +73,34 @@
     font-family: $english-font-family;
     font-size: rem(20);
     font-weight: $regular;
+}
+
+.loading__left.slide {
+    animation-name: slideUpAnime;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    // opacity: 0;
+}
+
+.loading__right.slide {
+    animation-name: slideUpAnime;
+    animation-duration: 3s;
+    animation-delay: 1.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    // opacity: 0;
+}
+
+@keyframes slideUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
