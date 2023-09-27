@@ -83,6 +83,7 @@
 
     @include mq(md) {
         display: flex;
+        width: 50%;
     }
 }
 
