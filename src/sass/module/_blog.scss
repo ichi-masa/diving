@@ -5,6 +5,14 @@
     position: relative;
 }
 
+.blog__layout {
+    padding-top: rem(80);
+
+    @include mq(md) {
+        padding-top: rem(100);
+    }
+}
+
 .blog::after {
     @include mq(md) {
         position: absolute;
@@ -24,9 +32,9 @@
     position: relative;
     padding-left: rem(6);
     padding-right: rem(6);
+    max-width: rem(600);
     margin-left: auto;
     margin-right: auto;
-    max-width: rem(600);
 
     @include mq(md) {
         padding: 0;
@@ -44,16 +52,8 @@
         width:rem(437) ;
         height: rem(201);
         top: rem(-222);
-        left: calc(50% - min(50vw, 57.5%));
+        left: calc(50% - min(50vw, rem(640)) + rem(20));
         z-index: 0;
-    }
-}
-
-.blog__inner {
-    padding-top: rem(80);
-
-    @include mq(md) {
-        padding-top: rem(100);
     }
 }
 
@@ -61,20 +61,17 @@
     margin-top: rem(24);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: rem(39);
+    gap: rem(40);
 
     @include mq(md) {
         margin-top: rem(80);
         grid-template-columns: repeat(3, 1fr);
-        gap: rem(40);
     }
 }
 
 .blog__button {
-    margin-top: rem(39);
-    margin-right: rem(4);
+    margin-top: rem(40);
     text-align: center;
-    padding-bottom: rem(4);
 
     @include mq(md) {
         margin-top: rem(80);

@@ -11,6 +11,7 @@
 }
 
 .loading__wrapper {
+    width: 100%;
     height: inherit;
 }
 
@@ -22,9 +23,10 @@
 .loading__left,
 .loading__right {
     height: inherit;
+    width: 50vw;
     aspect-ratio: 720 / 768;
     overflow: hidden;
-    display: none;
+    opacity: 0;
 }
 
 .loading__left img,
@@ -77,8 +79,8 @@
 
 .loading__left.slide {
     animation-name: slideUpAnime;
-    animation-duration: 3s;
-    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-delay: 1.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
     // opacity: 0;
@@ -86,8 +88,8 @@
 
 .loading__right.slide {
     animation-name: slideUpAnime;
-    animation-duration: 3s;
-    animation-delay: 1.3s;
+    animation-duration: 4s;
+    animation-delay: 1.8s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
     // opacity: 0;

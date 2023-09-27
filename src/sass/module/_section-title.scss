@@ -25,11 +25,11 @@
     color: $green;
     font-size: rem(12);
     font-weight: $regular;
-    padding: rem(4) 0;
+    margin-top: rem(4);
     line-height: 1.5;
     
     @include mq(md) {
-        padding: rem(8) 0 0;
+        margin-top: rem(8);
     }
 }
 
@@ -56,6 +56,6 @@
     margin-top: rem(-6);
 
     @include mq(md) {
-        padding-top: 0;
+        margin-top: rem(-10);
     }
 }

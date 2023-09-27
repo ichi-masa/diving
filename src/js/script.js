@@ -4,26 +4,31 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 // ローディングアニメーション
     $(function() {
         setTimeout(function(){
-            $('.js-loading-title').fadeIn(1000);
+            $('.js-loading-title').fadeIn(2000);
         },500);
         setTimeout(function(){
-            $('.js-loading-title').fadeOut(1000);
-        },2500);
+            $('.js-loading-title').fadeOut(500);
+        },500);
     });
 
     $(window).on('load', function() {
-        $('.loading__left').addClass('.slide');  // 'slide' クラスを追加
-        $('.loading__right').addClass('.slide');  // 'slide' クラスを追加
+        $('.loading__left').addClass('slide');  // 'slide' クラスを追加
+        $('.loading__right').addClass('slide');  // 'slide' クラスを追加
         
         setTimeout(function() {
-            $('.js-loading').fadeOut(6000);
-        }, 1000);
+            $('.js-loading-title-white').fadeIn(2000);
+        }, 6000);
+
+        setTimeout(function() {
+            $('.js-loading').fadeOut(3000);
+        }, 6500);
     });
 
 // ハンバーガーメニュー //
     $(function(){
         $('.hamburger').on('click', function() {
         $(this).toggleClass('active');
+        $('.header').toggleClass('active');
         return false;
     });
     });
@@ -35,6 +40,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         return false;
     });
     });
+
+ // ドロワーメニュー下の背景固定 //
+    $(function(){
+        $('.hamburger').on('click', function() {
+        $('body').toggleClass('active');
+        return false;
+    });
+    });   
 
 // mainview スライダー（Swiper）//
     const mvSwiper = new Swiper(".mainview__Swiper", {

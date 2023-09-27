@@ -7,20 +7,23 @@
 }
 
 .footer__layout {
-    margin-top: rem(100);
+    margin-top: rem(102);
+    padding-top: rem(48);
+    padding-bottom: rem(56);
 
     @include mq(md) {
-        margin-top: rem(160);
+        margin-top: rem(157);
+        padding-top: rem(80);
+        padding-bottom: rem(80);
     }
 }
 
 .footer__inner {
-    padding: rem(48) 0 rem(56);
     max-width: rem(600);
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 
     @include mq(md) {
-        padding: rem(80) rem(180) ;
         max-width: $inner;
     }
 }
@@ -45,11 +48,12 @@
 .footer__sns {
     display: flex;
     gap: rem(16);
-    padding-top: rem(16);
+    margin-top: rem(16);
     
     @include mq(md) {
         margin-left: rem(40);
-        padding-bottom: rem(5);
+        margin-top: 0;
+        margin-bottom: rem(5);
     }
 }
 
@@ -69,48 +73,42 @@
     display: flex;
     justify-content: center;
     line-height: 1.125;
-    margin-bottom: rem(40);
-
-    @include mq(md) {
-        margin-bottom: rem(80);
-    }
+    margin-top: rem(12);
+    gap: rem(16);
 }
 
 
 .footer__left,
 .footer__right {
-    width: 50%;
 
     @include mq(md) {
         display: flex;
     }
 }
 
-.footer__right {
-    padding-left: rem(12);
+.footer__left {
+    margin-right: auto;
+}
 
-    @include mq(md) {
-        padding-left: 0;
-    }
+.footer__right {
+    margin-right: auto;
 }
 
 .footer__list-top,
 .footer__list-bottom {
     @include mq(md) {
         width: 50%;
-        padding-left: rem(15);
     }
 }
 
-.footer__list-top--first {
-    @include mq(md) {
-        padding-left: 0;
-    }
+.footer__item {
+    margin-top: rem(16);
 }
 
 .footer__link {
     transition: all 0.2s;
 }
+
 
 .footer__link:hover,
 .footer__link--second:hover {
@@ -121,14 +119,10 @@
     font-weight: $bold;
     position: relative;
     padding-left: rem(22);
-    margin-top: rem(40);
+    padding-top: rem(12);
+    padding-bottom: rem(12);
 }
 
-.footer__menu-title--top {
-    @include mq(md) {
-        margin-top: rem(24);
-    }
-}
 
 .footer__menu-title::before {
     background-image: url(../images/common/starfish.png);
@@ -138,15 +132,15 @@
     content: '';
     width: rem(18);
     height: rem(18);
-    top: 0;
     left: 0;
 }
 
 
 .footer__item--second {
     font-weight: $regular;
-    margin-top: rem(24);
-    margin-left: rem(22);
+    padding-left: rem(22);
+    padding-top: rem(12);
+    padding-bottom: rem(12);
 }
 
 .footer__copyright {
@@ -155,8 +149,10 @@
     text-align: center;
     font-family: $english-font-family;
     font-weight: $regular;
+    margin-top: rem(28);
 
     @include mq(md) {
         font-size: rem(14);
+        margin-top: rem(68);
     }
 }
