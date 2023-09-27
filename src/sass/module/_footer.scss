@@ -71,28 +71,24 @@
 
 .footer__nav {
     display: flex;
-    justify-content: center;
     line-height: 1.125;
     margin-top: rem(12);
     gap: rem(16);
+    width: 100%;
+
+    @include mq(md) {
+        gap: rem(28);
+    }
 }
 
 
 .footer__left,
 .footer__right {
-
     @include mq(md) {
         display: flex;
-        // width: 50%;
+        width: 50%;
+        gap: rem(20);
     }
-}
-
-.footer__left {
-    margin-right: auto;
-}
-
-.footer__right {
-    margin-right: auto;
 }
 
 .footer__list-top,
@@ -103,6 +99,14 @@
 }
 
 .footer__item {
+    margin-top: rem(16);
+
+    @include mq(md) {
+        margin-top: 0;
+    }
+}
+
+.footer__item:not(:first-child) {
     margin-top: rem(16);
 }
 
