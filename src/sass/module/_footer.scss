@@ -86,15 +86,12 @@
 .footer__left,
 .footer__right {
     margin-right: auto;
-    
+
     @include mq(md) {
         display: flex;
         width: 50%;
         gap: rem(20);
     }
-}
-
-.footer__left {
 }
 
 .footer__list-top,

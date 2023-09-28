@@ -77,32 +77,77 @@
     font-weight: $regular;
 }
 
-.loading__left.slide {
-    animation-name: slideUpAnime;
-    animation-duration: 4s;
-    animation-delay: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    // opacity: 0;
+.loading.is-active {
+    opacity: 0;
+    visibility: hidden;
 }
 
-.loading__right.slide {
-    animation-name: slideUpAnime;
-    animation-duration: 4s;
-    animation-delay: 1.8s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    // opacity: 0;
+.loading__title.is-active {
+    animation: fadeIn 1s forwards ease;
+}
+
+.loading__title--white.is-active {
+    animation: fadeIn 1s forwards ease;
+}
+
+.loading__left.is-active,
+.loading__right.is-active {
+    animation: slideUpAnime 2s forwards ease-out;
+    // opacity: 1;
 }
 
 @keyframes slideUpAnime {
-    from {
+    0% {
         opacity: 0;
         transform: translateY(100%);
     }
 
-    to {
+    100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
