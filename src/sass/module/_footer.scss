@@ -73,8 +73,9 @@
     display: flex;
     line-height: 1.125;
     margin-top: rem(12);
-    gap: rem(16);
+    gap: max((16 / 375) * 100vw ,rem(16));
     width: 100%;
+    justify-content: center;
 
     @include mq(md) {
         gap: rem(28);
@@ -84,11 +85,16 @@
 
 .footer__left,
 .footer__right {
+    margin-right: auto;
+    
     @include mq(md) {
         display: flex;
         width: 50%;
         gap: rem(20);
     }
+}
+
+.footer__left {
 }
 
 .footer__list-top,
