@@ -5,14 +5,6 @@
     position: relative;
 }
 
-.blog__layout {
-    padding-top: rem(80);
-
-    @include mq(md) {
-        padding-top: rem(100);
-    }
-}
-
 .blog::after {
     @include mq(md) {
         position: absolute;
@@ -52,7 +44,7 @@
         width:rem(437) ;
         height: rem(201);
         top: rem(-222);
-        left: calc(50% - min(50vw, rem(640)) + rem(20));
+        left: calc(50% - min(48vw, rem(640)));
         z-index: 0;
     }
 }

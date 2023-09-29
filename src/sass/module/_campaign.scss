@@ -5,14 +5,6 @@
     height: 100%;
 }
 
-.campaign__layout {
-    margin-top: rem(40);
-    
-    @include mq(md) {
-        margin-top: rem(120);
-    }
-}
-
 .campaign__content {
     margin-top: rem(28);
     position: relative;

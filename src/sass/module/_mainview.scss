@@ -32,11 +32,11 @@
 .mainview__title-block {
     position: absolute;
     top: 49.8%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
     color: $white;
     z-index: 1;
     text-align: center;
+    width: 100%;
 }
 
 .mainview__main-title {

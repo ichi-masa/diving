@@ -4,18 +4,6 @@
     background-color: $pale-green;
 }
 
-.information__layout {
-    margin-top: rem(74);
-    padding-top: rem(80);
-    padding-bottom: rem(78);
-
-    @include mq(md) {
-        margin-top: rem(140);
-        padding-top: rem(100);
-        padding-bottom: rem(98);
-    }
-}
-
 .information__content {
     margin-top: rem(28);
     padding-bottom: rem(4);

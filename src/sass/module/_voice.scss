@@ -1,13 +1,5 @@
 @use "global" as *;
 
-.voice__layout {
-    margin-top: rem(84);
-    
-    @include mq(md) {
-        margin-top: rem(142);
-    }
-
-}
 .voice__content {
     position: relative;
     max-width: rem(600);
@@ -29,7 +21,7 @@
         width:rem(301) ;
         height: rem(135);
         top: rem(-214);
-        left: calc(50% - min(50vw, rem(635)) + rem(20));
+        left: calc(50% - min(48vw, rem(635)));
     }
 }
 
@@ -43,7 +35,7 @@
         width:rem(71) ;
         height: rem(161);
         bottom: rem(-68);
-        right: calc(50% - min(50vw, rem(560)) + rem(20));
+        right: calc(50% - min(48vw, rem(560)));
     }
 }
 

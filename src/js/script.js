@@ -70,7 +70,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     // ドロワーメニュー下の背景固定 //
     $(function () {
         $('.hamburger').on('click', function () {
-            $('body').toggleClass('active');
+            $('body').toggleClass('no-scroll');
             return false;
         });
     });

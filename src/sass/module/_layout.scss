@@ -1,0 +1,72 @@
+@use "global" as *;
+
+.layout__campaign {
+    margin-top: rem(40);
+    
+    @include mq(md) {
+        margin-top: rem(120);
+    }
+}
+
+.layout__information {
+    margin-top: rem(74);
+    padding-top: rem(80);
+    padding-bottom: rem(78);
+
+    @include mq(md) {
+        margin-top: rem(140);
+        padding-top: rem(100);
+        padding-bottom: rem(98);
+    }
+}
+
+
+.layout__blog {
+    padding-top: rem(80);
+
+    @include mq(md) {
+        padding-top: rem(100);
+    }
+}
+
+.layout__voice {
+    margin-top: rem(84);
+    
+    @include mq(md) {
+        margin-top: rem(142);
+    }
+}
+
+.layout__price {
+    margin-top: rem(84);
+    padding-top: rem(80);
+    padding-bottom: rem(83);
+    
+    @include mq(md) {
+        margin-top: rem(142);
+        padding-top: rem(100);
+        padding-bottom: rem(103);
+    }
+}
+
+
+.layout__contact {
+    margin-top: rem(82);
+
+    @include mq(md) {
+        margin-top: rem(145);
+    }
+}
+
+.layout__footer {
+    margin-top: rem(102);
+    padding-top: rem(48);
+    padding-bottom: rem(56);
+
+    @include mq(md) {
+        margin-top: rem(157);
+        padding-top: rem(80);
+        padding-bottom: rem(80);
+    }
+}
+
