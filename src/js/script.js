@@ -76,7 +76,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
 
     // mainview スライダー（Swiper）//
-    const mvSwiper = new Swiper(".mainview__Swiper", {
+    const mvSwiper = new Swiper("js-mv-Swiper", {
         loop: true,
         effect: 'fade',
         autoplay: {
@@ -87,7 +87,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
 
     // campaign スライダー（Swiper）//
-    const campaignSwiper = new Swiper(".campaign__Swiper", {
+    const campaignSwiper = new Swiper(".js-campaign-Swiper", {
         loop: true,
         slidesPerView: "1.26",
         spaceBetween: 24,

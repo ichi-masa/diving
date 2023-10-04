@@ -35,7 +35,7 @@
 }
 
 .sp-nav__link:hover,
-.sp-nav__link--second:hover {
+.sp-nav__link-second:hover {
     opacity: 0.6;
 }
 
@@ -59,7 +59,7 @@
     left: 0;
 }
 
-.sp-nav__item--second {
+.sp-nav__item-second {
     font-weight: $regular;
     padding-left: rem(22);
     padding-top: rem(12);
