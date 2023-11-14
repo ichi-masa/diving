@@ -1,0 +1,64 @@
+@use "global" as *;
+
+.page-campaign__breadcrumb {
+    margin-top: rem(8);
+}
+
+.page-campaign__content {
+    position: relative;
+}
+
+.page-campaign__content::before {
+    position: absolute;
+    background-image: url(../images/common/fish2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    width: rem(120);
+    height: rem(55);
+    top: rem(-20);
+    left: calc(50% - min(48vw, rem(635)));
+    z-index: -1;
+
+    @include mq(md) {
+        width: rem(301);
+        height: rem(138);
+        top: rem(-75);
+    }
+}
+
+.page-campaign__tags {
+    display: grid;
+    grid-template-columns: repeat(2, rem(162));
+    gap: rem(16) rem(21);
+    justify-content: center;
+
+    @include mq(md) {
+        grid-template-columns: repeat(4, rem(162));
+        gap: rem(32);
+        justify-content: flex-start;
+    }
+}
+
+.page-campaign__container {
+    max-width: rem(600);
+    margin: 0 auto;
+    padding: 0 rem(33);
+
+    @include mq(md) {
+        max-width: none;
+        padding: 0;
+    }
+}
+
+.page-campaign__items {
+    margin-top: rem(40);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: rem(40);
+
+    @include mq(md) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: rem(80) rem(40);
+    }
+}

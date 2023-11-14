@@ -1,0 +1,66 @@
+@use "global" as *;
+
+.archive-home__breadcrumb {
+    margin-top: rem(8);
+}
+
+.archive-home__body{
+    max-width: rem(600);
+    margin: 0 auto;
+
+    @include mq(md) {
+        max-width: none;
+    }
+}
+
+.archive-home__inner.inner {
+    padding-left: rem(20);
+    padding-right: rem(20);
+}
+
+.archive-home__flex {
+    display: flex;
+    flex-direction: column;
+
+    @include mq(md) {
+        flex-direction: row;
+        gap: rem(80);
+    }
+}
+
+.archive-home__main {
+    position: relative;
+
+    @include mq(md) {
+        width: 65.37%;
+    }
+}
+
+.archive-home__main::before {
+    position: absolute;
+    background-image: url(../images/common/fish2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    z-index: -1;
+    width:rem(120) ;
+    height: rem(55);
+    top: rem(-75);
+    left: calc(50% - min(48vw, rem(635)));
+    
+    @include mq(md) {
+        width:rem(301) ;
+        height: rem(138);
+    }
+}
+
+.archive-home__pagenavi {
+    margin-top: rem(80);
+    text-align: center;
+}
+
+.archive-home__aside {
+    @include mq(md) {
+        width: 27.22%;
+    }
+}

@@ -80,7 +80,7 @@
     }
 }
 
-.contact__information-block {
+.contact__block {
     text-align: center;
     font-size: rem(16);
     font-weight: $regular;
@@ -94,11 +94,11 @@
     }
 }
 
-.contact__information-text:nth-child(n + 2) {
+.contact__text:nth-child(n + 2) {
     margin-top: rem(4);
 }
 
-.contact__information-map {
+.contact__map {
     margin-top: rem(16);
     aspect-ratio: 295 / 160;
     overflow: hidden;

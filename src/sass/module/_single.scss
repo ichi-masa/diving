@@ -1,0 +1,131 @@
+@use "global" as *;
+
+.single__breadcrumb {
+    margin-top: rem(8);
+}
+
+.single__body{
+    max-width: rem(600);
+    margin: 0 auto;
+
+    @include mq(md) {
+        max-width: none;
+    }
+}
+
+.single__flex {
+    display: flex;
+    flex-direction: column;
+
+    @include mq(md) {
+        flex-direction: row;
+        gap: rem(80);
+    }
+}
+
+.single__main {
+    position: relative;
+
+    @include mq(md) {
+        width: 65.37%;
+    }
+}
+
+.single__main::before {
+    position: absolute;
+    background-image: url(../images/common/fish2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    z-index: -1;
+    width:rem(120) ;
+    height: rem(55);
+    top: rem(-75);
+    left: calc(50% - min(48vw, rem(635)));
+    
+    @include mq(md) {
+        width:rem(301) ;
+        height: rem(138);
+    }
+}
+
+.single__date {
+    font-size: rem(14);
+    font-weight: $regular;
+    line-height: 1.2867;
+    font-family: $english-font-family;
+}
+
+.single__title {
+    font-size: rem(24);
+    font-weight: $medium;
+    padding-bottom: rem(4);
+    border-bottom: 1px solid $green;
+}
+
+.single__image {
+    margin-top: rem(24);
+    aspect-ratio: 345 / 231;
+    overflow: hidden;
+
+    @include mq(md) {
+        margin-top: rem(40);
+        aspect-ratio: 700 / 468;
+    }
+}
+
+.single__main-content p {
+    font-size: rem(16);
+    font-weight: $regular;
+    line-height: 1.5;
+    margin-top: rem(24);
+
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}
+
+.single__main-content ul {
+    margin-top: rem(24);
+
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}
+
+.single__main-content li {
+    position: relative;
+    padding-left: rem(27);
+}
+
+.single__main-content li::before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/common/starfish2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:rem(18) ;
+    height: rem(18);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.single__main-content li:not(:first-child) {
+    margin-top: rem(4);
+}
+
+.single__pagenavi {
+    margin-top: rem(80);
+    text-align: center;
+}
+
+.single__pagenavi.pagenavi .wp-pagenavi {
+    gap: rem(54);
+}
+
+.single__aside {
+    @include mq(md) {
+        width: 27.22%;
+    }
+}

@@ -29,7 +29,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     //     webStorage();
     // });
 
-    
+
     // $(window).on('load', function(){
     //     setTimeout(function () {
     //         $('.loading__title').addClass('is-active');
@@ -76,11 +76,11 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
 
     // mainview スライダー（Swiper）//
-    const mvSwiper = new Swiper("js-mv-Swiper", {
+    const mvSwiper = new Swiper(".js-mv-Swiper", {
         loop: true,
         effect: 'fade',
         autoplay: {
-            delay: 5000,
+            delay: 3000,
             disableOnInteraction: false
         },
         speed: 3000,
@@ -179,4 +179,45 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             });
         }
     });
+
+
+
+    //page-campaignのタグ
+    $(".js-tag").on("click", function () {
+        $(".js-tag").removeClass("current");
+        $(this).addClass("current");
+    });
+
+    //page-informationのタブ
+    // タブメニュー
+    $(function () {
+        $(".js-tab-content:first-of-type").css("display", "block");
+        $(".js-tab").on("click", function () {
+            $(".current").removeClass("current");
+            $(this).addClass("current");
+            const index = $(this).index();
+            $(".js-tab-content").hide().eq(index).fadeIn(300);
+        });
+    });
+
+
+    MicroModal.init({
+        openTrigger: 'data-micromodal-trigger', // トリガーの属性名
+        closeTrigger: 'data-micromodal-close',  // クローズトリガーの属性名
+        disableScroll: true,                    // モーダル表示時にスクロールを無効化
+        // disableFocus: false,                    // フォーカス制御を無効化
+        // awaitCloseAnimation: true,              // クローズアニメーション完了を待つ
+        // debugMode: false                        // デバッグモード
+    });
+
+    $(function () {
+        // タイトルをクリックすると
+        $(".js-accordion").on("click", function () {
+          // クリックした次の要素を開閉
+            $(this).children('.sidebar__monthly-items').slideToggle(300);
+          // タイトルにopenクラスを付け外しして矢印の向きを変更
+            $(this).toggleClass("open", 300);
+        });
+    });
+
 });
