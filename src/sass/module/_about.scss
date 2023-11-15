@@ -1,0 +1,195 @@
+@use "global" as *;
+
+.about__content {
+    margin-top: rem(24);
+    position: relative;
+    max-width: rem(600);
+    margin-left: auto;
+    margin-right: auto;
+    
+    @include mq(md) {
+        margin-top: rem(38);
+        max-width: none;
+    }
+}
+
+.about__content::after {
+    @include mq(md) {
+        position: absolute;
+        background-image: url(../images/common/coral.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+        width:rem(194) ;
+        height: rem(181);
+        bottom: rem(-88);
+        right: calc(50% - min(48vw, rem(660)));
+        z-index: 2;
+        background-position: center;
+    }
+}
+
+.about__content--page::before {
+    
+    @include mq(md) {
+        position: absolute;
+        background-image: url(../images/common/fish2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+        z-index: 0;
+        width:rem(301) ;
+        height: rem(138);
+        top: rem(-75);
+        left: calc(50% - min(48vw, rem(635)));
+    }
+}
+
+.about__content--page::after {
+    
+    @include mq(md) {
+        position: absolute;
+        background-image: url(../images/common/fish3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+        z-index: 0;
+        width:rem(301) ;
+        height: rem(138);
+        bottom: rem(-150);
+        right: calc(50% - min(48vw, rem(690)));
+    }
+}
+
+.about__images {
+    position: relative;
+    aspect-ratio: 345 / 212;
+    width: 100%;
+    height: 100%;
+}
+
+.about__image-left {
+    aspect-ratio: 128 / 194;
+    overflow: hidden;
+    position: relative;
+    width: 37.10%;
+    z-index: 2;
+    top: rem(5);
+    left: 0;
+
+    @include mq(md) {
+        top: 0;
+    }
+}
+
+.about__image-left--page {
+    display: none;
+
+    @include mq(md) {
+        display: block;
+    }
+}
+
+.about__image-right {
+    aspect-ratio: 281 / 186;
+    overflow: hidden;
+    width: 81.45%;
+    margin-left: auto;
+    margin-top: -47.5%;
+    
+    @include mq(md) {
+        margin-top: -48.8%;
+    }
+}
+
+.about__image-right--page {
+    width: 100%;
+    margin-top: 0;
+
+    @include mq(md) {
+        width: 81.45%;
+        margin-top: -48.8%;
+    }
+}
+
+.about__image-left img,
+.about__image-right img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+}
+
+
+.about__content-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: rem(40);
+    
+    @include mq(md) {
+        margin-top: 0;
+        flex-direction: row;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40.5%, -55%);
+        z-index: 3;
+    }
+}
+
+.about__content-block--page {
+    @include mq(md) {
+        align-items: center;
+    }
+}
+
+.about__content-title {
+    color: $green;
+    font-size: rem(40);
+    font-family: $english-font-family;
+    font-weight: $regular;
+    line-height: 1;
+    
+    @include mq(md) {
+        color: $white;
+        font-size: rem(80);
+        line-height: 1.25;
+    }
+}
+
+.about__content-title--page {
+    position: absolute;
+    top: rem(24);
+    left: rem(24);
+    color: $white;
+
+    @include mq(md) {
+        position: static;
+    }
+}
+
+.about__text-content{
+    margin-top: rem(16);
+    color: $font-color;
+    font-size: rem(16);
+    line-height: 1.5;
+    
+    @include mq(md) {
+        margin-top: 0;
+        width: rem(400);
+        margin-left: rem(40);
+        color: $white;
+    }
+}
+
+.about__text-content--page {
+    margin-top: 0;
+}
+
+.about__button {
+    text-align: center;
+    margin-top: rem(50);
+    
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}

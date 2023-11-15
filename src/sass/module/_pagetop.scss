@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.pagetop {
+    position: fixed;
+    bottom: rem(15);
+    right: rem(15);
+    z-index: 5;
+
+    @include mq(md) {
+        bottom: rem(20);
+        right: rem(20);
+    }
+}
+
+
+.pagetop__button {
+    display: block;
+    width: rem(48);
+    height: rem(48);
+    transition: all 0.2s;
+
+    @include mq(md) {
+        width: rem(80);
+        height: rem(80);
+    }
+}
+
+.pagetop__button:hover {
+    transform: scale(1.05);
+}

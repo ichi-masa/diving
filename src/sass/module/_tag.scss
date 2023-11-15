@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.tag {
+    display: inline-block;
+    font-size: rem(12);
+    line-height: 1;
+    font-weight: $regular;
+    color: $green;
+    padding: rem(10) rem(12);
+    border: 1px solid $green;
+    width: max-content;
+
+    @include mq(md) {
+        line-height: 1;
+        padding: rem(10) rem(15);
+    }
+}
+
+.tag--page {
+    width: rem(162);
+    text-align: center;
+    background-color: $white;
+}
+
+.tag--page.current {
+    color: $white;
+    background-color: $green;
+}

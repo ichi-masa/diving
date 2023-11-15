@@ -1,0 +1,144 @@
+@use "global" as *;
+
+.campaign-card {
+    display: block;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    height: 100%;
+}
+
+.campaign-card__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+}
+
+.campaign-card__image {
+    overflow: hidden;
+    aspect-ratio: 280 / 188;
+}
+
+.campaign-card__image--home {
+    aspect-ratio: 294 / 188;
+}
+
+.campaign-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.campaign-card__body {
+    padding: rem(16) rem(16) rem(24);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    @include mq(md) {
+        padding: rem(24) rem(16) rem(40);
+    }
+}
+
+.campaign-card__body--page {
+    @include mq(md) {
+        padding: rem(24) rem(24) rem(40);
+    }
+}
+
+.campaign-card__title {
+    font-size: rem(16);
+    font-weight: $medium;
+    line-height: 1.5;
+    padding-bottom: rem(8);
+    margin-top: rem(4);
+    border-bottom: 1px solid $green;
+    flex-grow: 1;
+}
+
+.campaign-card__title--home {
+    margin-top: 0;
+    text-align: center;
+}
+
+.campaign-card__text {
+    text-align: center;
+    font-size: rem(14);
+    font-weight: $regular;
+    margin-top: rem(8);
+
+    @include mq(md) {
+        font-size: rem(16);
+        margin-top: rem(16);
+    }
+}
+
+.campaign-card__price-content {
+    margin-top: rem(8);
+    font-family: $number-font-family;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    line-height: 1;
+}
+
+.campaign-card__price-del {
+    font-size: rem(20);
+    font-weight: $bold;
+    position: relative;
+    z-index: -1;
+
+    @include mq(md) {
+        font-size: rem(24);
+    }
+}
+
+.campaign-card__price-del::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: rem(3);
+    background-color: #C94800;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.campaign-card__price {
+    font-size: rem(32);
+    font-weight: $bold;
+    margin-left: rem(16);
+    color: $green;
+
+    @include mq(md) {
+        font-size: rem(40);
+        margin-left: rem(24);
+    }
+}
+
+.campaign-card__detail {
+    @include mq(md) {
+        margin-top: rem(24);
+        line-height: 1.5;
+    }
+}
+
+.campaign-card__footer {
+    margin-top: rem(32);
+    text-align: center;
+    color: $green;
+}
+
+.campaign-card__period {
+    margin-top: rem(16);
+    font-family: $number-font-family;
+    font-weight: $bold;
+    font-size: rem(16);
+}
+
+.campaign-card__contact-message {
+    margin-top: rem(7);
+    font-size: rem(14);
+}
+
+.campaign-card__button {
+    margin-top: rem(32);
+}

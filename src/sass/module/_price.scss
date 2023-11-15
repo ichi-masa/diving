@@ -1,0 +1,106 @@
+@use "global" as *;
+
+.price {
+    background-color: $pale-green;
+}
+
+.price__content {
+    margin-top: rem(30);
+    max-width: rem(600);
+    margin-left: auto;
+    margin-right: auto;
+    
+    @include mq(md) {
+        margin-top: rem(40);
+        position: relative;
+        max-width: none;
+    }
+}
+
+.price__content::after {
+    @include mq(md) {
+        position: absolute;
+        background-image: url(../images/common/fish3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+        width:rem(437) ;
+        height: rem(201);
+        bottom: rem(-42);
+        left: calc(50% - min(48vw, rem(640)));
+        z-index: 0;
+    }
+}
+
+.price__content-inner {
+    display: flex;
+    flex-direction: column;
+    
+    @include mq(md) {
+        flex-direction: row-reverse;
+        gap: rem(93);
+    }
+}
+
+.price__image {
+    aspect-ratio: 345 / 227;
+    overflow: hidden;
+
+    @include mq(md) {
+        aspect-ratio: 492 / 746;
+        width: 45.5556%;
+    }
+}
+.price__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.price__items {
+    margin-top: rem(40);
+
+    @include mq(md) {
+        margin-top: 0;
+        width: 45.5556%;
+    }
+}
+
+.price__item:nth-child(n + 2) {
+    margin-top: rem(40);
+}
+
+.price__item-title {
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: 1.5;
+    padding-bottom: rem(3);
+    border-bottom: 1px solid $green;
+}
+
+.price__menu {
+    display: flex;
+    justify-content: space-between;
+    font-size: rem(14);
+    font-weight: $regular;
+    line-height: 1.71428571;
+    margin-top: rem(8);
+
+    @include mq(md) {
+        font-size: rem(16);
+        line-height: 1.5;
+    }
+}
+
+.price__menu-price {
+    margin-left: rem(25);
+}
+
+.price__button {
+    margin-top: rem(40);
+    text-align: center;
+
+    @include mq(md) {
+        margin-top: rem(80);
+    }
+}

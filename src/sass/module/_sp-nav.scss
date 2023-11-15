@@ -1,0 +1,72 @@
+@use "global" as *;
+
+.sp-nav {
+    color: $white;
+    position: fixed;
+    background-color: $green;
+    top: rem(80);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+    overflow: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.sp-nav__item {
+    margin-top: rem(16);
+}
+
+.sp-nav__nav {
+    display: flex;
+    line-height: 1.125;
+    gap: max((16 / 375) * 100vw ,rem(16));
+    justify-content: center;
+}
+
+.sp-nav__left {
+    margin-right: auto;
+}
+
+.sp-nav__right {
+    margin-right: auto;
+}
+
+.sp-nav__link:hover,
+.sp-nav__link-second:hover {
+    opacity: 0.6;
+}
+
+
+.sp-nav__menu-title {
+    font-weight: $bold;
+    position: relative;
+    padding-left: rem(22);
+    padding-top: rem(12);
+    padding-bottom: rem(12);
+}
+
+.sp-nav__menu-title::before {
+    background-image: url(../images/common/starfish.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: '';
+    width: rem(18);
+    height: rem(18);
+    left: 0;
+}
+
+.sp-nav__item-second {
+    font-weight: $regular;
+    padding-left: rem(22);
+    padding-top: rem(12);
+    padding-bottom: rem(12);
+}
+
+.sp-nav.active {
+    opacity: 1;
+    visibility: visible;
+}

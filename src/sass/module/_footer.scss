@@ -1,0 +1,156 @@
+@use "global" as *;
+
+.footer {
+    background-color: $green;
+    color: $white;
+    position: relative;
+}
+
+.footer__inner {
+    max-width: rem(600);
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(md) {
+        max-width: $inner;
+    }
+}
+
+.footer__heading {
+    @include mq(md) {
+        display: flex;
+        align-items: end;
+    }
+}
+
+.footer__logo-link {
+    display: block;
+    width: rem(120);
+    line-height: 1;
+
+    @include mq(md) {
+        width: rem(200);
+    }
+}
+
+.footer__sns {
+    display: flex;
+    gap: rem(16);
+    margin-top: rem(16);
+    
+    @include mq(md) {
+        margin-left: rem(40);
+        margin-top: 0;
+        margin-bottom: rem(5);
+    }
+}
+
+.footer__sns-icon {
+    display: block;
+    width: rem(24);
+    height: rem(24);
+
+    @include mq(md) {
+        width: rem(32);
+        height: rem(32);
+    }
+}
+
+.footer__nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    line-height: 1.125;
+    margin-top: rem(12);
+    gap: 0 rem(8);
+
+    @include mq(md) {
+        grid-template-columns: repeat(4, 1fr);
+        gap: rem(32);
+    }
+}
+
+.footer__items:nth-child(1) {
+    order: 1;
+}
+
+.footer__items:nth-child(2) {
+    order: 3;
+    @include mq(md) {
+        order: 2;
+    }
+} 
+
+.footer__items:nth-child(3) {
+    order: 2;
+    @include mq(md) {
+        order: 3;
+    }
+} 
+
+.footer__items:nth-child(4) {
+    order: 4;
+}
+
+.footer__item {
+    margin-top: rem(16);
+
+    @include mq(md) {
+        margin-top: 0;
+    }
+}
+
+.footer__item:not(:first-child) {
+    margin-top: rem(16);
+}
+
+.footer__link {
+    transition: all 0.2s;
+}
+
+
+.footer__link:hover,
+.footer__link-second:hover {
+    opacity: 0.6;
+}
+
+.footer__menu-title {
+    font-weight: $bold;
+    position: relative;
+    padding-left: rem(22);
+    padding-top: rem(12);
+    padding-bottom: rem(12);
+}
+
+
+.footer__menu-title::before {
+    background-image: url(../images/common/starfish.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: '';
+    width: rem(18);
+    height: rem(18);
+    left: 0;
+}
+
+
+.footer__item-second {
+    font-weight: $regular;
+    padding-left: rem(22);
+    padding-top: rem(12);
+    padding-bottom: rem(12);
+}
+
+.footer__copyright {
+    display: block;
+    font-size: rem(12);
+    text-align: center;
+    font-family: $english-font-family;
+    font-weight: $regular;
+    margin-top: rem(28);
+
+    @include mq(md) {
+        font-size: rem(14);
+        margin-top: rem(68);
+    }
+}

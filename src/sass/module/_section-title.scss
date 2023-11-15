@@ -1,0 +1,61 @@
+@use "global" as *;
+
+.section-title {
+    text-align: center;
+}
+
+.section-title__main {
+    font-family: $english-font-family;
+    font-weight: $regular;
+    font-size: rem(32);
+    line-height: 1.25;
+    
+    @include mq(md) {
+        font-size: rem(40);
+        line-height: 1;
+    }
+}
+
+.section-title__main::first-letter {
+    color: $green;
+}
+
+
+.section-title__sub {
+    color: $green;
+    font-size: rem(12);
+    font-weight: $regular;
+    margin-top: rem(4);
+    line-height: 1.5;
+    
+    @include mq(md) {
+        margin-top: rem(8);
+    }
+}
+
+.section-title__main--blog,
+.section-title__main--blog::first-letter,
+.section-title__sub--blog {
+
+    @include mq(md) {
+        color: $white;
+    }
+}
+
+.section-title__main--contact {
+    font-size: rem(80);
+    line-height: 1;
+
+    @include mq(md) {
+        font-size: rem(80);
+    }
+}
+
+.section-title__sub--contact {
+    padding-top: 0;
+    margin-top: rem(-6);
+
+    @include mq(md) {
+        margin-top: rem(-10);
+    }
+}
