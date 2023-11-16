@@ -210,6 +210,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         // debugMode: false                        // デバッグモード
     });
 
+    //アーカイブのアコーディオン
     $(function () {
         // タイトルをクリックすると
         $(".js-accordion").on("click", function () {
@@ -217,6 +218,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             $(this).children('.sidebar__monthly-items').slideToggle(300);
           // タイトルにopenクラスを付け外しして矢印の向きを変更
             $(this).toggleClass("open", 300);
+        });
+    });
+
+    //
+    $(function () {
+        $(".js-accordion-title").on("click", function () {
+        $(this).next().slideToggle(300);
+        $(this).toggleClass("open", 300);
         });
     });
 

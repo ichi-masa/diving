@@ -1,0 +1,111 @@
+@use "global" as *;
+
+.page-faq__breadcrumb {
+    margin-top: rem(8);
+}
+
+.page-faq__inner.inner {
+    max-width: rem(600);
+
+    @include mq(md) {
+        max-width: rem(750);
+    }
+}
+
+.page-faq__content {
+    position: relative;
+}
+
+.page-faq__content::before {
+    position: absolute;
+    background-image: url(../images/common/fish2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    width: rem(120);
+    height: rem(55);
+    top: rem(-20);
+    left: calc(50% - min(48vw, rem(635)));
+    z-index: -1;
+
+    @include mq(md) {
+        width: rem(301);
+        height: rem(138);
+        top: rem(-75);
+    }
+}
+
+.page-faq__item:not(:first-child) {
+    margin-top: rem(40);
+}
+
+.page-faq__title {
+    color: $white;
+    font-size: rem(16);
+    font-weight: $regular;
+    padding: rem(16);
+    background: $green;
+    position: relative;
+
+    @include mq(md) {
+        padding: rem(25) rem(40);
+    }
+}
+
+.page-faq__title::before {
+    position: absolute;
+    content: '';
+    width: rem(28);
+    height: rem(1);
+    background-color: $white;
+    top: 50%;
+    transform: translateY(-50%);
+    right: rem(16);
+
+    @include mq(md) {
+        right: rem(40);
+    }
+}
+
+.page-faq__title::after {
+    position: absolute;
+    content: '';
+    width: rem(28);
+    height: rem(1);
+    background-color: $white;
+    top: 50%;
+    transform: translateY(-50%);
+    right: rem(16);
+    transition: all 0.3s;
+
+    @include mq(md) {
+        right: rem(40);
+    }
+}
+
+.page-faq__title.open::after {
+    position: absolute;
+    content: '';
+    width: rem(28);
+    height: rem(1);
+    background-color: $white;
+    top: 50%;
+    transform: rotate(90deg) translateY(-50%);
+    right: rem(16);
+
+    @include mq(md) {
+        right: rem(40);
+    }
+}
+
+.page-faq__text {
+    display: none;
+    font-size: rem(16);
+    padding: rem(24) rem(16);
+    border: 1px solid $green;
+
+    @include mq(md) {
+        margin-top: rem(16);
+        padding: rem(40);
+    }
+}

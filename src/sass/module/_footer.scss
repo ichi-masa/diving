@@ -69,6 +69,10 @@
     }
 }
 
+.footer__nav--sitemap {
+    margin-top: 0;
+}
+
 .footer__items:nth-child(1) {
     order: 1;
 }
@@ -131,6 +135,10 @@
     width: rem(18);
     height: rem(18);
     left: 0;
+}
+
+.footer__menu-title--sitemap::before {
+    background-image: url(../images/common/starfish3.png);
 }
 
 

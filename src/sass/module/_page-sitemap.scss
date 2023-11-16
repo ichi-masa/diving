@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.page-sitemap__breadcrumb {
+    margin-top: rem(8);
+}
+
+.page-sitemap__content {
+    position: relative;
+}
+
+.page-sitemap__content::before {
+    position: absolute;
+    background-image: url(../images/common/fish2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    width: rem(120);
+    height: rem(55);
+    top: rem(-20);
+    left: calc(50% - min(48vw, rem(635)));
+    z-index: -1;
+
+    @include mq(md) {
+        content: none;
+    }
+}

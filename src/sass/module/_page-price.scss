@@ -1,0 +1,137 @@
+@use "global" as *;
+
+.page-price__breadcrumb {
+    margin-top: rem(8);
+}
+
+.page-price__content {
+    position: relative;
+}
+
+.page-price__content::before {
+    position: absolute;
+    background-image: url(../images/common/fish2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    width: rem(120);
+    height: rem(55);
+    top: rem(-20);
+    left: calc(50% - min(48vw, rem(635)));
+    z-index: -1;
+
+    @include mq(md) {
+        width: rem(301);
+        height: rem(138);
+        top: rem(-75);
+    }
+}
+
+
+.page-price__inner.inner {
+    @include mq(md) {
+        max-width: rem(700);
+    }
+}
+
+.page-price__item {
+    border: 1px solid $green;
+
+    @include mq(md) {
+        display: flex;
+        width: 100%;
+    }
+}
+
+.page-price__item:not(:first-child) {
+    margin-top: rem(40);
+
+    @include mq(md) {
+        margin-top: rem(80);
+    }
+}
+
+.page-price__item-title {
+    color: $white;
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: 1.5;
+    padding: rem(8) 0;
+    background-color: $green;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mq(md) {
+        width: 28.49%;
+    }
+}
+
+.page-price__item-title span {
+    position: relative;
+    padding-left: rem(32);
+
+    @include mq(md) {
+        padding-left: 0;
+        padding-bottom: rem(72);
+    }
+}
+
+.page-price__item-title span::before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/common/price-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:rem(24) ;
+    height: rem(24);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+
+    @include mq(md) {
+        width: rem(64);
+        height: rem(64);
+        left: 50%;
+        transform: translate(-50%, -35%);
+    }
+}
+
+.page-price__list {
+        @include mq(md) {
+            width: 71.51%;
+        }
+}
+
+.page-price__menu {
+    display: flex;
+    width: 100%;
+}
+
+.page-price__menu:not(:first-child) {
+    border-top: 1px solid $green;
+}
+
+.page-price__menu-item,
+.page-price__menu-price {
+    font-size: rem(16);
+    line-height: 1.5;
+    height: rem(60);
+    display: flex;
+}
+
+.page-price__menu-item {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.page-price__menu-price {
+    justify-content: right;
+    align-items: center;
+    padding-right: rem(16);
+    width: 30%;
+    border-left: 1px solid $green;
+}
