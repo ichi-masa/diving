@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.layout-page {
+    margin-top: rem(52);
+    
+    @include mq(md) {
+        margin-top: rem(150);
+    }
+}
+
+.layout-page--information {
+    margin-top: rem(121);
+    
+    @include mq(md) {
+        margin-top: rem(150);
+    }
+}
