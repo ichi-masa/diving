@@ -6,7 +6,7 @@
     line-height: 1;
     font-weight: $regular;
     color: $green;
-    padding: rem(10) rem(12);
+    padding: rem(9) rem(12);
     border: 1px solid $green;
     width: max-content;
 
@@ -20,6 +20,8 @@
     width: rem(162);
     text-align: center;
     background-color: $white;
+    font-size: rem(14);
+    padding: rem(9) rem(12);
 }
 
 .tag--page.current {

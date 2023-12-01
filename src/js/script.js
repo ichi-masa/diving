@@ -214,9 +214,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(function () {
         // タイトルをクリックすると
         $(".js-accordion").on("click", function () {
-          // クリックした次の要素を開閉
+            // クリックした次の要素を開閉
             $(this).children('.sidebar__monthly-items').slideToggle(300);
-          // タイトルにopenクラスを付け外しして矢印の向きを変更
+            // タイトルにopenクラスを付け外しして矢印の向きを変更
             $(this).toggleClass("open", 300);
         });
     });
@@ -224,8 +224,36 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     //
     $(function () {
         $(".js-accordion-title").on("click", function () {
-        $(this).next().slideToggle(300);
-        $(this).toggleClass("open", 300);
+            $(this).next().slideToggle(300);
+            $(this).toggleClass("open", 300);
+        });
+    });
+
+
+    //contact-formのvalidation
+    $(function () {
+        $("#js-contactForm").on("submit", function (event) {
+            var nameInput = $("input[name='name']");
+            var errorMessage = $(".error");
+            var hasError = false;
+
+            
+
+            // バリデーションロジック
+            if (nameInput.val() === "") {
+                nameInput.addClass("error-input");
+                errorMessage.text("※必須項目が入力されていません。入力してください。");
+                hasError = true;
+            } else {
+                nameInput.removeClass("error-input");
+                errorMessage.text("");
+            }
+
+            // 他のフォーム要素に対するバリデーションも同様に追加
+
+            if (hasError) {
+                event.preventDefault(); // フォーム送信をキャンセル
+            }
         });
     });
 

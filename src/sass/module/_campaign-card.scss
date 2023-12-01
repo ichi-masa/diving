@@ -17,6 +17,14 @@
     aspect-ratio: 280 / 188;
 }
 
+.campaign-card__image--page {
+    aspect-ratio: 280 / 188;
+
+    @include mq(md) {
+        aspect-ratio: 520 / 347;
+    }
+}
+
 .campaign-card__image--home {
     aspect-ratio: 294 / 188;
 }
@@ -54,6 +62,13 @@
     flex-grow: 1;
 }
 
+.campaign-card__title--page {
+    @include mq(md) {
+        font-size: rem(24);
+        padding-bottom: rem(1);
+    }
+}
+
 .campaign-card__title--home {
     margin-top: 0;
     text-align: center;
@@ -71,13 +86,30 @@
     }
 }
 
+.campaign-card__text--page {
+    @include mq(md) {
+        margin-top: rem(24);
+    }
+}
+
 .campaign-card__price-content {
     margin-top: rem(8);
     font-family: $number-font-family;
     display: flex;
+    gap: rem(16);
     align-items: baseline;
     justify-content: center;
     line-height: 1;
+
+    @include mq(md) {
+        gap: rem(24);
+    }
+}
+
+.campaign-card__price-content--page {
+    @include mq(md) {
+        gap: rem(40);
+    }
 }
 
 .campaign-card__price-del {
@@ -105,12 +137,10 @@
 .campaign-card__price {
     font-size: rem(32);
     font-weight: $bold;
-    margin-left: rem(16);
     color: $green;
 
     @include mq(md) {
         font-size: rem(40);
-        margin-left: rem(24);
     }
 }
 
@@ -128,10 +158,10 @@
 }
 
 .campaign-card__period {
-    margin-top: rem(16);
     font-family: $number-font-family;
     font-weight: $bold;
     font-size: rem(16);
+    line-height: calc(18 / 16);
 }
 
 .campaign-card__contact-message {
@@ -140,5 +170,6 @@
 }
 
 .campaign-card__button {
-    margin-top: rem(32);
+    margin-top: rem(16);
 }
+

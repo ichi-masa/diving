@@ -48,9 +48,9 @@
 
 .gallery__item:nth-of-type(6n+1) img,
 .gallery__item:nth-of-type(6n+6) img {
-    aspect-ratio: 523 / 345;
+    aspect-ratio: 345 / 523;
 
     @include mq(md) {
-        aspect-ratio: 746 / 492;
+        aspect-ratio: 492 / 746;
     }
 }

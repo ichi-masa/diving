@@ -1,0 +1,78 @@
+@use "global" as *;
+
+.contact-form__item {
+    padding-bottom: rem(24);
+    border-bottom: 1px dashed $green;
+
+    @include mq(md) {
+        display: flex;
+        padding-bottom: rem(40);
+    }
+}
+
+.contact-form__item:not(:first-child) {
+    margin-top: rem(24);
+
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}
+
+.contact-form__item dt {
+    font-size: rem(16);
+    font-weight: $bold;
+
+    @include mq(md) {
+        width: 31.43%;
+    }
+}
+
+.contact-form__item dt span {
+    font-size: rem(12);
+    font-weight: $regular;
+    color: $white;
+    padding: rem(2) rem(16);
+    background: #C94800;
+    margin-left: rem(8);
+}
+
+.contact-form__item dd {
+    margin-top: rem(16);
+
+    @include mq(md) {
+        margin-top: 0;
+        width: 68.57%;
+    }
+}
+
+.contact-form__select {
+    position: relative;
+}
+
+.contact-form__select::after {
+    position: absolute;
+    background-image: url(../images/common/select-arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    width: rem(12);
+    height: rem(12);
+    z-index: 100;
+    top: 50%;
+    right: rem(8);
+}
+
+
+.contact-form__check {
+    margin-top: rem(40);
+    text-align: center;
+}
+
+.contact-form__check span {
+    text-align: left;
+}
+
+.contact-form__button {
+    margin-top: rem(24);
+    text-align: center;
+}

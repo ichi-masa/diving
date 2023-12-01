@@ -1,11 +1,11 @@
 @use "global" as *;
 
 
-.text-content__content {
+.text-content {
     position: relative;
 }
 
-.text-content__content::before {
+.text-content::before {
     position: absolute;
     background-image: url(../images/common/fish2.png);
     background-repeat: no-repeat;

@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.button {
+.submit-button {
     background-color: $green;
     border: 1px solid $green;
     color: $white;
@@ -8,14 +8,14 @@
     font-family: $english-font-family;
     font-size: rem(14);
     line-height: calc(22 / 14);
-    padding: rem(15) rem(88) rem(15) rem(40);
+    // padding: rem(15) rem(114) rem(15) rem(56);
     position: relative;
     cursor: pointer;
     z-index: 1;
     transition: all;
 }
 
-.button::before {
+.submit-button::before {
     border: 1px solid $green;
     position: absolute;
     content: '';
@@ -26,7 +26,7 @@
     z-index: -2;
 }
 
-.button::after {
+.submit-button::after {
     content: '';
     background-color: $white;
     width: 100%;
@@ -40,15 +40,15 @@
     z-index: -1;
 }
 
-.button:hover {
+.submit-button:hover {
     color: $green;
 }
 
-.button:hover::after {
+.submit-button:hover::after {
     transform: scale(1,1);
 }
 
-.button span::after {
+.submit-button span::after {
     background-image: url(../images/common/arrow_white.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -60,6 +60,10 @@
     right: rem(38);
 }
 
-.button:hover span::after {
+.submit-button:hover span::after {
     background-image: url(../images/common/arrow_green.png); /* ホバー時の背景画像 */
+}
+
+.submit-button:hover [type="submit"] {
+    color: $green;
 }

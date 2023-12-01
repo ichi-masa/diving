@@ -27,6 +27,12 @@
     }
 }
 
+.page-contact__inner.inner {
+    @include mq(md) {
+        max-width: rem(700);
+    }
+}
+
 .page-contact__message {
     text-align: center;
 }

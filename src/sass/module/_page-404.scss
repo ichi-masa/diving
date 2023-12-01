@@ -1,0 +1,109 @@
+@use "global" as *;
+
+
+.page-404 {
+    padding-top: rem(80);
+    padding-bottom: rem(40);
+    background: $green;
+    position: relative;
+
+    @include mq(md) {
+        padding-top: rem(90);
+        padding-bottom: rem(148);
+    }
+}
+
+.page-404::after {
+    position: absolute;
+    background-image: url(../images/common/404.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    width: rem(345);
+    height: rem(345);
+    top: calc(50% + rem(80));
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include mq(md) {
+        width: rem(698);
+        height: rem(698);
+        top: calc(50% + rem(90));
+        left: 35%;
+    }
+}
+
+.page-404__breadcrumb {
+    margin-top: rem(8);
+}
+
+.page-404__breadcrumb.breadcrumb {
+    color: $white;
+}
+
+.page-404__body {
+    color: $white;
+}
+
+.page-404__content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.page-404__title {
+    font-size: rem(80);
+    font-family: $number-font-family;
+    font-weight: $regular;
+    letter-spacing: 0.5em;
+    text-indent: 0.5em;
+
+    @include mq(md) {
+        font-size: rem(160);
+    }
+}
+
+.page-404__text {
+    @include mq(md) {
+        margin-top: rem(24);
+    }
+}
+
+.page-404__button {
+    margin-top: rem(40);
+
+    @include mq(md) {
+        margin-top: rem(80);
+    }
+}
+
+.page-404__button .button {
+    background-color: $white;
+    border: 1px solid $white;
+    color: $green;
+}
+
+.page-404__button .button::before {
+    border: 1px solid $white;
+}
+
+.page-404__button .button::after {
+    background-color: $green;
+}
+
+.page-404__button .button:hover {
+    color: $white;
+}
+
+
+.page-404__button .button:hover::after {
+    transform: scale(1,1);
+}
+
+.page-404__button .button span::after {
+    background-image: url(../images/common/arrow_green.png);
+}
+
+.page-404__button .button:hover span::after {
+    background-image: url(../images/common/arrow_white.png); /* ホバー時の背景画像 */
+}
