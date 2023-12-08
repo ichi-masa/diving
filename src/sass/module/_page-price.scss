@@ -6,6 +6,13 @@
 
 .page-price__content {
     position: relative;
+    max-width: rem(600);
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(md) {
+        max-width: none;
+    }
 }
 
 .page-price__content::before {
@@ -47,7 +54,7 @@
     margin-top: rem(42);
 
     @include mq(md) {
-        margin-top: rem(80);
+        margin-top: rem(78);
     }
 }
 

@@ -6,6 +6,8 @@
 
 .archive-home__body{
     max-width: rem(600);
+    margin-left: auto;
+    margin-right: auto;
 
     @include mq(md) {
         max-width: none;
@@ -59,8 +61,12 @@
 }
 
 .archive-home__pagenavi {
-    margin-top: rem(80);
+    margin-top: rem(77);
     text-align: center;
+
+    @include mq(md) {
+        margin-top: rem(80);
+    }
 }
 
 .archive-home__aside {

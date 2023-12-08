@@ -37,6 +37,10 @@
 
 .page-faq__item:not(:first-child) {
     margin-top: rem(41);
+
+    @include mq(md) {
+        margin-top: rem(40);
+    }
 }
 
 .page-faq__title {
@@ -46,6 +50,7 @@
     padding: rem(16);
     background: $green;
     position: relative;
+    cursor: pointer;
 
     @include mq(md) {
         padding: rem(25) rem(40);

@@ -29,7 +29,7 @@
         width: rem(698);
         height: rem(698);
         top: calc(50% + rem(90));
-        left: 35%;
+        left: 37%;
     }
 }
 
@@ -64,11 +64,11 @@
     }
 }
 
-// .page-404__text {
-//     @include mq(md) {
-//         margin-top: rem(24);
-//     }
-// }
+.page-404__text {
+    @include mq(md) {
+        margin-top: rem(28);
+    }
+}
 
 .page-404__button {
     margin-top: rem(40);

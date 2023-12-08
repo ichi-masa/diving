@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .sidebar {
-    margin-top: rem(80);
+    margin-top: rem(82);
 
     @include mq(md) {
         margin-top: 0;
@@ -9,8 +9,8 @@
 }
 
 .sidebar__inner {
-    padding-left: rem(25);
-    padding-right: rem(25);
+    padding-left: rem(20);
+    padding-right: rem(20);
 
     @include mq(md) {
         padding-left: 0;
@@ -18,12 +18,17 @@
     }
 }
 
+.sidebar__inner--single {
+    padding-left: rem(25);
+    padding-right:  rem(25);
+}
+
 .sidebar__content {
     margin-top: rem(24);
 }
 
 .sidebar__item:not(:first-child) {
-    margin-top: rem(82);
+    margin-top: rem(84);
 }
 
 .sidebar__title {
@@ -106,6 +111,7 @@
 .sidebar__year-item {
     position: relative;
     padding-left: rem(32);
+    cursor: pointer;
 }
 
 .sidebar__monthly-item {

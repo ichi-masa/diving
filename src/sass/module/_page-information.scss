@@ -6,6 +6,13 @@
 
 .page-information__content {
     position: relative;
+    max-width: rem(600);
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(md) {
+        max-width: none;
+    }
 }
 
 .page-information__content::before {
@@ -29,9 +36,7 @@
 
 .page-information__items {
     display: flex;
-    justify-content: space-between;
-
-    
+    gap: rem(19);
 }
 
 .page-information__item {
@@ -41,18 +46,22 @@
     line-height: 1.5;
     font-weight: $regular;
     color: $green;
-    width: rem(102);
-    height: rem(60);
     border: 1px solid $pale-green;
     background-color: $pale-green;
     text-align: center;
+    cursor: pointer;
+    padding: rem(8) 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
 
     @include mq(md) {
         font-size: rem(24);
         line-height: 1;
         width: rem(300);
         height: rem(90);
-        padding-left: rem(72);
+        padding-left: rem(84);
     }
 }
 

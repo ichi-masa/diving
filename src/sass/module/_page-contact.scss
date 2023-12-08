@@ -6,6 +6,13 @@
 
 .page-contact__content {
     position: relative;
+    max-width: rem(600);
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(md) {
+        max-width: none;
+    }
 }
 
 .page-contact__content::before {

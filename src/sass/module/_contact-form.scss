@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.contact-form__item:not(:last-of-type) {
+.contact-form__item {
     padding-bottom: rem(24);
     border-bottom: 1px dashed $green;
 
@@ -16,10 +16,6 @@
     @include mq(md) {
         margin-top: rem(39);
     }
-}
-
-.contact-form__item:last-of-type {
-    padding-bottom: rem(20);
 }
 
 .contact-form__item dt {

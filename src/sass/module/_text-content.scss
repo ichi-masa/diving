@@ -3,6 +3,13 @@
 
 .text-content {
     position: relative;
+    max-width: rem(600);
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(md) {
+        max-width: none;
+    }
 }
 
 .text-content::before {
@@ -66,4 +73,8 @@
 .text-content__sub-items {
     list-style-type: decimal;
     margin-left: rem(24);
+}
+
+.text-content__item p {
+    margin-left: rem(-24);
 }

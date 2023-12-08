@@ -6,6 +6,13 @@
 
 .page-sitemap__content {
     position: relative;
+    max-width: rem(600);
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(md) {
+        max-width: none;
+    }
 }
 
 .page-sitemap__content::before {
@@ -29,7 +36,7 @@
 }
 
 .page-sitemap__content .footer__items:nth-child(3) {
-    margin-left: rem(16);
+    margin-left: rem(10);
 
     @include mq(md) {
         margin-left: 0
@@ -37,7 +44,7 @@
 }
 
 .page-sitemap__content .footer__items:nth-child(4) {
-    margin-left: rem(16);
+    margin-left: rem(10);
 
     @include mq(md) {
         margin-left: 0;
