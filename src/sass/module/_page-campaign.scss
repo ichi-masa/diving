@@ -59,7 +59,7 @@
 
     @include mq(md) {
         grid-template-columns: repeat(2, 1fr);
-        gap: rem(80) rem(40);
+        gap: rem(82) rem(40);
     }
 }
 

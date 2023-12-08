@@ -17,8 +17,8 @@
     z-index: -1;
     width:rem(120) ;
     height: rem(55);
-    top: rem(-20);
-    left: calc(50% - min(48vw, rem(620)));
+    top: rem(-92);
+    left: calc(50% - min(46vw, rem(620)));
     
     @include mq(md) {
         width:rem(301) ;
@@ -52,12 +52,12 @@
         line-height: 1;
         width: rem(300);
         height: rem(90);
-        padding-left: rem(64);
+        padding-left: rem(72);
     }
 }
 
 
-.page-information__item a {
+.page-information__item span {
     height: inherit;
     display: flex;
     justify-content: center;

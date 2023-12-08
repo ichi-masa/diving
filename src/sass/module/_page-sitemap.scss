@@ -16,11 +16,30 @@
     content: '';
     width: rem(120);
     height: rem(55);
-    top: rem(-20);
-    left: calc(50% - min(48vw, rem(620)));
+    top: rem(4);
+    left: calc(50% - min(46vw, rem(620)));
     z-index: -1;
 
     @include mq(md) {
         content: none;
+    }
+}
+
+.page-sitemap__content .footer__items:nth-child(2) {
+}
+
+.page-sitemap__content .footer__items:nth-child(3) {
+    margin-left: rem(16);
+
+    @include mq(md) {
+        margin-left: 0
+    }
+}
+
+.page-sitemap__content .footer__items:nth-child(4) {
+    margin-left: rem(16);
+
+    @include mq(md) {
+        margin-left: 0;
     }
 }

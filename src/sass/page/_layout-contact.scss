@@ -10,4 +10,16 @@
 
 .layout-contact--page {
     margin-top: rem(106);
+
+    @include mq(md) {
+        margin-top: rem(140);
+    }
+}
+
+.layout-contact--sitemap {
+    margin-top: rem(94);
+
+    @include mq(md) {
+        margin-top: rem(126);
+    }
 }

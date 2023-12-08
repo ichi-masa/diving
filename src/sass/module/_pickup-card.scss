@@ -23,15 +23,21 @@
     width: 47.71%;
 }
 
+.pickup-card__date-wrapper {
+    display: inline;
+}
+
 .pickup-card__date {
     font-size: rem(12);
     font-weight: $regular;
     line-height: 1.5;
     font-family: $english-font-family;
+    display: inline;
+    vertical-align: text-top;
 }
 
 .pickup-card__title {
     font-size: rem(16);
     font-weight: $medium;
-    line-height: 1.5;
+    line-height: 1;
 }

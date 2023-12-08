@@ -21,7 +21,7 @@
         width:rem(301) ;
         height: rem(135);
         top: rem(-214);
-        left: calc(50% - min(48vw, rem(635)));
+        left: calc(50% - min(48vw, rem(615)));
     }
 }
 
@@ -35,15 +35,15 @@
         width:rem(71) ;
         height: rem(161);
         bottom: rem(-68);
-        right: calc(50% - min(48vw, rem(560)));
+        right: calc(50% - min(48vw, rem(540)));
     }
 }
 
 .voice__items {
-    margin-top: rem(45);
+    margin-top: rem(42);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: rem(40);
+    gap: rem(38);
     
     @include mq(md) {
         margin-top: rem(30);

@@ -6,7 +6,6 @@
 
 .archive-home__body{
     max-width: rem(600);
-    margin: 0 auto;
 
     @include mq(md) {
         max-width: none;
@@ -14,8 +13,13 @@
 }
 
 .archive-home__inner.inner {
-    padding-left: rem(20);
-    padding-right: rem(20);
+    padding-left: rem(21);
+    padding-right: rem(21);
+
+    @include mq(md) {
+        padding-left: $padding-pc;
+        padding-right: $padding-pc;
+    }
 }
 
 .archive-home__flex {
@@ -45,8 +49,8 @@
     z-index: -1;
     width:rem(120) ;
     height: rem(55);
-    top: rem(-75);
-    left: calc(50% - min(48vw, rem(635)));
+    top: rem(-70);
+    left: calc(50% - min(48vw, rem(433)));
     
     @include mq(md) {
         width:rem(301) ;

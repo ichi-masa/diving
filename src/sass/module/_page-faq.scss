@@ -36,7 +36,7 @@
 }
 
 .page-faq__item:not(:first-child) {
-    margin-top: rem(40);
+    margin-top: rem(41);
 }
 
 .page-faq__title {
@@ -49,6 +49,7 @@
 
     @include mq(md) {
         padding: rem(25) rem(40);
+        font-size: rem(20);
     }
 }
 
@@ -64,6 +65,7 @@
 
     @include mq(md) {
         right: rem(40);
+        width: rem(32);
     }
 }
 
@@ -80,6 +82,7 @@
 
     @include mq(md) {
         right: rem(40);
+        width: rem(32);
     }
 }
 
@@ -94,7 +97,7 @@
     right: rem(16);
 
     @include mq(md) {
-        right: rem(40);
+        right: rem(43);
     }
 }
 
@@ -103,6 +106,7 @@
     font-size: rem(16);
     padding: rem(24) rem(16);
     border: 1px solid $green;
+    line-height: 1.4;
 
     @include mq(md) {
         margin-top: rem(16);

@@ -4,3 +4,17 @@
     font-size: rem(14);
     color: $font-color;
 }
+
+.breadcrumb__items {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb__item:not(:first-child) {
+    margin-left: rem(8);
+}
+
+.breadcrumb__item img {
+    width: rem(4);
+    height: rem(8);
+}

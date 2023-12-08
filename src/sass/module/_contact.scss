@@ -28,7 +28,7 @@
         width:rem(109) ;
         height: rem(50);
         top: rem(-26);
-        right: calc(50% - min(48vw, rem(187.5)));
+        right: calc(50% - min(46vw, rem(187.5)));
         z-index: 0;
 
         @include mq(md) {
@@ -127,14 +127,10 @@
 
 .contact__text {
     text-align: center;
-    margin-top: rem(5);
+    margin-top: rem(8);
     font-size: rem(14);
     color: $green;
     line-height: 1.2857;
-
-    @include mq(md) {
-        margin-top: rem(8);
-    }
 }
 
 .contact__button {

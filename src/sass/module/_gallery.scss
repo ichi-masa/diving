@@ -9,7 +9,7 @@
     @include mq(md) {
         grid-template-columns: repeat(50, 1fr);
         grid-auto-flow: dense;
-        margin-top: rem(80);
+        margin-top: rem(76);
     }
 }
 

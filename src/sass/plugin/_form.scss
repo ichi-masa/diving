@@ -14,7 +14,8 @@ $back-cr: #fff; //input（テキスト系）の背景色
 
 /*サイズ等の指定*/
 $fz: rem(16); //入力するときのfont-size
-$padding-und: rem(10); //paddingの指定（上下） inputの内側の余白で使う
+$fz-select: rem(12);
+$padding-und: rem(7); //paddingの指定（上下） inputの内側の余白で使う
 $padding-lnr: rem(10); //paddingの指定（左右） inputの内側の余白で使う
 $border-r: rem(0); //border-radius（テキスト系）
 
@@ -43,7 +44,7 @@ $check-size: rem(22); //外枠の幅高さ
 $check-bg-cr: #fff; //外枠の背景色
 $check-border-cr: $green; //外枠の色
 $check-bg-cr-inner: #C94800; //チェックマークの背景色
-$check-space: rem(8); //チェックマークと文字の距離
+$check-space: rem(26); //チェックマークと文字の距離
 $check-space-betweenRadio: rem(20); //チェックマークの間の距離
 $check-weight: 2px; //チェックマークの線の太さ(px)
 
@@ -64,7 +65,7 @@ textarea {
     background-image: none;
     font-family: inherit;
     /*↓カスタム */
-    margin-top: rem(10);
+    // margin-top: rem(16);
     font-size: $fz;
     padding: $padding-und $padding-lnr;
     width: 100%;
@@ -108,7 +109,7 @@ button,
     border: none;
     border-radius: 0;
     /*↓カスタム */
-    padding: rem(15) rem(114) rem(15) rem(56);
+    padding: rem(22) rem(114) rem(15) rem(56);
     background: $back-cr-btn;
     color: $font-cr-btn;
     font-size: $fz-btn;
@@ -127,9 +128,13 @@ button,
         padding: 0 0 0 calc($radio-size + $radio-space);
         margin: 0 $radio-space-betweenRadio 0 0;
         font-size: $radio-fz;
-        line-height: 1;
+        line-height: 1.63;
         cursor: pointer;
         transition: 0.3s ease;
+
+        @include mq(md) {
+            line-height: 1.76;
+        }
 
         &::before {
             position: absolute;
@@ -189,7 +194,7 @@ button,
             position: absolute;
             content: "";
             top: rem(10);
-            left: 0;
+            left: rem(18);
             transform: translateY(-50%);
             background: $check-bg-cr;
             border: 1px solid $check-border-cr;
@@ -234,14 +239,18 @@ select {
     cursor: pointer;
     width: 100%;
     /*↓カスタム */
-    margin-top: rem(10);
-    font-size: $fz;
-    padding: $padding-und $padding-lnr;
+    // margin-top: rem(10);
+    font-size: $fz-select;
+    padding: rem(10) rem(8);
     background-color: $back-cr;
     border: 1px solid $border-cr-default;
     border-radius: $border-r;
     /*↓デフォルトのアイコンを消す場合はコメントアウト（noneにする）*/
     appearance: none;
+
+    @include mq(md) {
+        padding: rem(7) $padding-lnr;
+    }
 
     &:focus {
         border: 1px solid $border-cr;

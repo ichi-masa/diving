@@ -58,6 +58,14 @@
     }
 }
 
+.voice-card__title--page {
+    margin-top: 0;
+
+    @include mq(md) {
+        margin-top: rem(8);
+    }
+}
+
 .voice-card__image-wrapper {
     width: 48.24%;
     max-width: rem(220);

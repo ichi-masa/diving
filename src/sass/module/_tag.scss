@@ -22,6 +22,10 @@
     background-color: $white;
     font-size: rem(14);
     padding: rem(9) rem(12);
+
+    @include mq(md) {
+        padding: rem(9) rem(12);
+    }
 }
 
 .tag--page.current {

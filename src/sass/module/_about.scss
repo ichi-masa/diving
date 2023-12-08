@@ -23,7 +23,7 @@
         width:rem(194) ;
         height: rem(181);
         bottom: rem(-88);
-        right: calc(50% - min(48vw, rem(660)));
+        right: calc(50% - min(48vw, rem(635)));
         z-index: 2;
         background-position: center;
     }
@@ -41,7 +41,7 @@
         width:rem(301) ;
         height: rem(138);
         top: rem(-70);
-        left: calc(50% - min(48vw, rem(635)));
+        left: calc(50% - min(48vw, rem(620)));
     }
 }
 
@@ -63,7 +63,6 @@
 
 .about__images {
     position: relative;
-    aspect-ratio: 345 / 212;
     width: 100%;
     height: 100%;
 }

@@ -52,6 +52,12 @@
     }
 }
 
+.campaign-card__body--home {
+    @include mq(md) {
+        padding: rem(16) rem(23) rem(24);
+    }
+}
+
 .campaign-card__title {
     font-size: rem(16);
     font-weight: $medium;
@@ -92,6 +98,13 @@
     }
 }
 
+.campaign-card__text--home {
+    @include mq(md) {
+        margin-top: rem(8);
+        font-size: rem(14);
+    }
+}
+
 .campaign-card__price-content {
     margin-top: rem(8);
     font-family: $number-font-family;
@@ -112,6 +125,12 @@
     }
 }
 
+.campaign-card__price-content--home {
+    @include mq(md) {
+        gap: rem(18);
+    }
+}
+
 .campaign-card__price-del {
     font-size: rem(20);
     font-weight: $bold;
@@ -120,6 +139,12 @@
 
     @include mq(md) {
         font-size: rem(24);
+    }
+}
+
+.campaign-card__price-del--home {
+    @include mq(md) {
+        font-size: rem(20);
     }
 }
 
@@ -141,6 +166,12 @@
 
     @include mq(md) {
         font-size: rem(40);
+    }
+}
+
+.campaign-card__price--home {
+    @include mq(md) {
+        font-size: rem(32);
     }
 }
 

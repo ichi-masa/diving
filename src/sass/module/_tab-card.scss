@@ -13,8 +13,9 @@
     @include mq(md) {
         flex-direction: row;
         border: 2px solid $green;
+        padding: rem(21);
         align-items: center;
-        justify-content: space-between;
+        gap: rem(48);
     }
 }
 
@@ -29,11 +30,15 @@
 .tab-card__title {
     padding-bottom: rem(8);
     border-bottom: 1px solid $green;
+    line-height: 1;
 }
 
 .tab-card__text {
-    margin-top: rem(8);
+    margin-top: rem(6);
 
+    @include mq(md) {
+        margin-top: rem(8);
+    }
 }
 
 .tab-card__image {
@@ -44,6 +49,7 @@
     @include mq(md) {
         aspect-ratio: 492 / 313;
         width: 47.86%;
+        margin-top: 0;
     }
 }
 

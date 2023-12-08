@@ -9,8 +9,8 @@
 }
 
 .sidebar__inner {
-    padding-left: rem(20);
-    padding-right: rem(20);
+    padding-left: rem(25);
+    padding-right: rem(25);
 
     @include mq(md) {
         padding-left: 0;
@@ -23,7 +23,7 @@
 }
 
 .sidebar__item:not(:first-child) {
-    margin-top: rem(80);
+    margin-top: rem(82);
 }
 
 .sidebar__title {
@@ -31,7 +31,7 @@
     font-weight: $regular;
     position: relative;
     line-height: 2.084;
-    padding-left: rem(74);
+    padding-left: rem(82);
 }
 
 .sidebar__title::before {
@@ -53,7 +53,7 @@
     width:rem(50) ;
     height: rem(50);
     top: 0;
-    left: rem(16);
+    left: rem(24);
 }
 
 .sidebar__pickup-item:not(:first-child) {
@@ -84,12 +84,12 @@
 }
 
 .sidebar__button {
-    margin-top: rem(40);
+    margin-top: rem(42);
     text-align: center;
 }
 
 .sidebar__campaign-item:not(:first-child) {
-    margin-top: rem(40);
+    margin-top: rem(42);
 }
 
 
@@ -103,7 +103,11 @@
     margin-top: rem(4);
 }
 
-.sidebar__year-item,
+.sidebar__year-item {
+    position: relative;
+    padding-left: rem(32);
+}
+
 .sidebar__monthly-item {
     position: relative;
     padding-left: rem(24);
@@ -118,9 +122,16 @@
     border-style: solid;
     border-width: 10px 0 10px 16px;
     border-color: transparent transparent transparent $green;
-    top: rem(8);
-    left: 0;
+    top: rem(10);
     transition: all 0.3s;
+}
+
+.sidebar__year-item::before {
+    left: 5px;
+}
+
+.sidebar__monthly-item::before {
+    left: 0;
 }
 
 .sidebar__year-item.open::before {

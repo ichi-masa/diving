@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.contact-form__item {
+.contact-form__item:not(:last-of-type) {
     padding-bottom: rem(24);
     border-bottom: 1px dashed $green;
 
@@ -10,17 +10,23 @@
     }
 }
 
-.contact-form__item:not(:first-child) {
-    margin-top: rem(24);
+.contact-form__item:not(:first-of-type) {
+    margin-top: rem(22);
 
     @include mq(md) {
-        margin-top: rem(40);
+        margin-top: rem(39);
     }
+}
+
+.contact-form__item:last-of-type {
+    padding-bottom: rem(20);
 }
 
 .contact-form__item dt {
     font-size: rem(16);
     font-weight: $bold;
+    display: flex;
+    align-items: start;
 
     @include mq(md) {
         width: 31.43%;
@@ -31,9 +37,13 @@
     font-size: rem(12);
     font-weight: $regular;
     color: $white;
-    padding: rem(2) rem(16);
+    padding: rem(2) rem(11);
     background: #C94800;
+    border: 1px solid #C94800;
     margin-left: rem(8);
+    letter-spacing: 0.4em;
+    display: inline-block;
+    text-indent: 0.4em;
 }
 
 .contact-form__item dd {
@@ -60,12 +70,17 @@
     z-index: 100;
     top: 50%;
     right: rem(8);
+    transform: translateY(-50%);
 }
 
 
 .contact-form__check {
     margin-top: rem(40);
     text-align: center;
+
+    @include mq(md) {
+        margin-top: rem(80);
+    }
 }
 
 .contact-form__check span {

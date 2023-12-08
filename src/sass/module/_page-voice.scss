@@ -16,14 +16,14 @@
     content: '';
     width: rem(120);
     height: rem(55);
-    top: rem(-20);
-    left: calc(50% - min(48vw, rem(635)));
+    top: rem(-25);
+    left: calc(50% - min(46vw, rem(620)));
     z-index: -1;
 
     @include mq(md) {
         width: rem(301);
         height: rem(138);
-        top: rem(-75);
+        top: rem(-70);
     }
 }
 
@@ -44,7 +44,7 @@
     margin-top: rem(40);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: rem(40);
+    gap: rem(41);
     
     @include mq(md) {
         grid-template-columns: repeat(2, 1fr);
@@ -55,4 +55,8 @@
 .page-voice__pagenavi {
     margin-top: rem(80);
     text-align: center;
+
+    @include mq(md) {
+        margin-top: rem(72);
+    }
 }

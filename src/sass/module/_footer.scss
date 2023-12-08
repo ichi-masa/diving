@@ -61,7 +61,8 @@
     grid-template-columns: repeat(2, 1fr);
     line-height: 1.125;
     margin-top: rem(12);
-    gap: 0 rem(8);
+    gap: 0 rem(18);
+    white-space: nowrap;
 
     @include mq(md) {
         grid-template-columns: repeat(4, 1fr);
@@ -71,6 +72,10 @@
 
 .footer__nav--sitemap {
     margin-top: 0;
+
+    @include mq(md) {
+        gap: rem(116);
+    }
 }
 
 .footer__items:nth-child(1) {

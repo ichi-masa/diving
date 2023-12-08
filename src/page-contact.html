@@ -233,12 +233,18 @@
       </div>
 
       <!-- breadcrumb -->
-      <div class="page-contact__breadcrumb breadcrumb inner">
-        TOP > お問い合わせ
+      <div class="page-contact__breadcrumb breadcrumb">
+        <div class="breadcrumb__inner inner">
+          <ul class="breadcrumb__items">
+            <li class="breadcrumb__item">TOP</li>
+            <li class="breadcrumb__item"><img src="./assets/images/common/breadcrumb-arrow.png" alt="パンくずリスト区切り"></li>
+            <li class="breadcrumb__item">お問い合わせ</li>
+          </ul>
+        </div>
       </div>
 
       <!-- page-contact__content -->
-      <div class="page-contact__content layout-page">
+      <div class="page-contact__content layout-page layout-page--contact">
         <div class="page-contact__inner inner">
           <div class="page-contact__form contact-form">
             <form action="" method="post" id="js-contactForm">
@@ -314,48 +320,11 @@
       
     </div>
 
-    
-
-    <!-- contact -->
-    <section class="contact layout-contact">
-      <div class="contact__inner inner">
-        <div class="contact__content">
-          <div class="contact__content-left">
-            <div class="contact__logo">
-              <img src="./assets/images/common/contact_logo.png" alt="CodeUps">
-            </div>
-            <div class="contact__information">
-              <div class="contact__block">
-                <p class="contact__text">沖縄県那覇市1-1</p>
-                <p class="contact__text">TEL:0120-000-0000</p>
-                <p class="contact__text">営業時間:8:30-19:00</p>
-                <p class="contact__text">定休日:毎週火曜日</p>
-              </div>
-              <div class="contact__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28636.50104094062!2d127.66410247938657!3d26.210902335542897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5697141a6b58b%3A0x2cd8aff616585e98!2z5rKW57iE55yM6YKj6KaH5biC!5e0!3m2!1sja!2sjp!4v1695087083014!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="contact__content-right">
-            <div class="contact__title section-title">
-              <div class="section-title__main section-title__main--contact">Contact</div>
-              <h2 class="section-title__sub section-title__sub--contact">お問い合わせ</h2>
-            </div>
-            <p class="contact__text">ご予約・お問い合わせはコチラ</p>
-            <div class="contact__button">
-              <a class="button">
-                <span>Contact us</span>
-              </a>
-            </div>
-          </div>
-        </div> <!-- contact__content -->
-      </div> <!-- contact__inner -->
-    </section>
 
   </main>
 
   <!-- footer -->
-  <footer class="footer layout-footer">
+  <footer class="footer layout-footer layout-footer--contact">
     <div class="footer__inner inner">
       <div class="footer__heading">
         <div class="footer__logo"><a href="#" class="footer__logo-link"><img src="./assets/images/common/logo.png" alt="CodeUps"></a></div>

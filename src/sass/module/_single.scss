@@ -6,7 +6,6 @@
 
 .single__body{
     max-width: rem(600);
-    margin: 0 auto;
 
     @include mq(md) {
         max-width: none;
@@ -19,7 +18,7 @@
 
     @include mq(md) {
         flex-direction: row;
-        gap: rem(80);
+        gap: rem(86);
     }
 }
 
@@ -40,12 +39,13 @@
     z-index: -1;
     width:rem(120) ;
     height: rem(55);
-    top: rem(-75);
-    left: calc(50% - min(48vw, rem(635)));
+    top: rem(-25);
+    left: calc(50% - min(46vw, rem(433)));
     
     @include mq(md) {
         width:rem(301) ;
         height: rem(138);
+        top: rem(-70);
     }
 }
 
@@ -54,6 +54,7 @@
     font-weight: $regular;
     line-height: 1.2867;
     font-family: $english-font-family;
+    vertical-align: text-top;
 }
 
 .single__title {
@@ -61,6 +62,11 @@
     font-weight: $medium;
     padding-bottom: rem(4);
     border-bottom: 1px solid $green;
+
+    @include mq(md) {
+        font-size: rem(32);
+        padding-bottom: 0;
+    }
 }
 
 .single__image {
@@ -116,8 +122,12 @@
 }
 
 .single__pagenavi {
-    margin-top: rem(80);
+    margin-top: rem(40);
     text-align: center;
+
+    @include mq(md) {
+        margin-top: rem(80);
+    }
 }
 
 .single__pagenavi.pagenavi .wp-pagenavi {

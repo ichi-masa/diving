@@ -9,9 +9,25 @@
 }
 
 .layout-page--information {
-    margin-top: rem(121);
+    margin-top: rem(120);
     
     @include mq(md) {
         margin-top: rem(150);
+    }
+}
+
+.layout-page--contact {
+    margin-top: rem(50);
+
+    @include mq(md) {
+        margin-top: rem(148);
+    }
+}
+
+.layout-page--sitemap {
+    margin-top: rem(24);
+
+    @include mq(md) {
+        margin-top: rem(138);
     }
 }
