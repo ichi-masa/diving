@@ -1,10 +1,6 @@
 @use "global" as *;
 
-.page-information__breadcrumb {
-    margin-top: rem(8);
-}
-
-.page-information__content {
+.page-information {
     position: relative;
     max-width: rem(600);
     margin-left: auto;
@@ -15,7 +11,7 @@
     }
 }
 
-.page-information__content::before {
+.page-information::before {
     position: absolute;
     background-image: url(../images/common/fish2.png);
     background-repeat: no-repeat;
@@ -76,7 +72,7 @@
 .page-information__item:nth-of-type(1)::before {
     @include mq(md) {
         position: absolute;
-        background-image: url(../images/common/information-icon-1.svg);
+        background-image: url(../images/common/information-icon-2.png);
         background-repeat: no-repeat;
         background-size: contain;
         content: '';
@@ -91,7 +87,7 @@
 .page-information__item:nth-of-type(2)::before {
     @include mq(md) {
         position: absolute;
-        background-image: url(../images/common/information-icon-2.svg);
+        background-image: url(../images/common/information-icon-1.png);
         background-repeat: no-repeat;
         background-size: contain;
         content: '';
@@ -106,7 +102,7 @@
 .page-information__item:nth-of-type(3)::before {
     @include mq(md) {
         position: absolute;
-        background-image: url(../images/common/information-icon-3.svg);
+        background-image: url(../images/common/information-icon-3.png);
         background-repeat: no-repeat;
         background-size: contain;
         content: '';
@@ -125,30 +121,15 @@
 }
 
 .page-information__item.current:nth-of-type(1)::before {
-    mask-image:  url(../images/common/information-icon-1.svg);
-    mask-size: contain;
-    mask-repeat: no-repeat;
-    mask-position: center;
-
-    background-color: $white;
+    background-image:  url(../images/common/information-icon-white-1.png);
 }
 
 .page-information__item.current:nth-of-type(2)::before {
-    mask-image:  url(../images/common/information-icon-2.svg);
-    mask-size: contain;
-    mask-repeat: no-repeat;
-    mask-position: center;
-
-    background-color: $white;
+    background-image:  url(../images/common/information-icon-white-2.png);
 }
 
 .page-information__item.current:nth-of-type(3)::before {
-    mask-image:  url(../images/common/information-icon-3.svg);
-    mask-size: contain;
-    mask-repeat: no-repeat;
-    mask-position: center;
-
-    background-color: $white;
+    background-image:  url(../images/common/information-icon-white-3.png);
 }
 
 .page-information__content-item {

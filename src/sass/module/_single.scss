@@ -1,54 +1,5 @@
 @use "global" as *;
 
-.single__breadcrumb {
-    margin-top: rem(8);
-}
-
-.single__body{
-    max-width: rem(600);
-
-    @include mq(md) {
-        max-width: none;
-    }
-}
-
-.single__flex {
-    display: flex;
-    flex-direction: column;
-
-    @include mq(md) {
-        flex-direction: row;
-        gap: rem(86);
-    }
-}
-
-.single__main {
-    position: relative;
-
-    @include mq(md) {
-        width: 65.37%;
-    }
-}
-
-.single__main::before {
-    position: absolute;
-    background-image: url(../images/common/fish2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    content: '';
-    z-index: -1;
-    width:rem(120) ;
-    height: rem(55);
-    top: rem(-25);
-    left: calc(50% - min(46vw, rem(433)));
-    
-    @include mq(md) {
-        width:rem(301) ;
-        height: rem(138);
-        top: rem(-70);
-    }
-}
-
 .single__date {
     font-size: rem(14);
     font-weight: $regular;
@@ -80,7 +31,7 @@
     }
 }
 
-.single__main-content p {
+.single__content p {
     font-size: rem(16);
     font-weight: $regular;
     line-height: 1.5;
@@ -91,7 +42,18 @@
     }
 }
 
-.single__main-content ul {
+.single__content img {
+    margin-top: rem(24);
+    aspect-ratio: 345 / 231;
+    overflow: hidden;
+
+    @include mq(md) {
+        margin-top: rem(40);
+        aspect-ratio: 700 / 468;
+    }
+}
+
+.single__content ul {
     margin-top: rem(24);
 
     @include mq(md) {
@@ -99,12 +61,12 @@
     }
 }
 
-.single__main-content li {
+.single__content li {
     position: relative;
     padding-left: rem(27);
 }
 
-.single__main-content li::before {
+.single__content li::before {
     position: absolute;
     content: '';
     background-image: url(../images/common/starfish2.png);
@@ -117,7 +79,7 @@
     left: 0;
 }
 
-.single__main-content li:not(:first-child) {
+.single__content li:not(:first-child) {
     margin-top: rem(4);
 }
 

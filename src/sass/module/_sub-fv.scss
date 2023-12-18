@@ -2,19 +2,20 @@
 
 .sub-fv {
     position: relative;
-}
-
-.sub-fv image {
     width: 100%;
-    aspect-ratio: 375 / 460;
-    overflow: hidden;
-    
+    height: rem(460);
+
     @include mq(md) {
-        aspect-ratio: 1440 / 548;
+        height: rem(548);
     }
 }
 
-.sub-fv image img {
+.sub-fv__image {
+    width: 100%;
+    height: inherit;
+}
+
+.sub-fv__image img {
     width: 100%;
     height: 100%;
     object-fit: cover;

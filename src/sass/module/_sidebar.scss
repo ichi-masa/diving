@@ -108,6 +108,30 @@
     margin-top: rem(4);
 }
 
+
+.sidebar__year-item span,
+.sidebar__monthly-item a {
+    position: relative;
+}
+
+.sidebar__year-item span::after,
+.sidebar__monthly-item a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: rem(1);
+    background-color: $green;
+    transition: all 0.2s;
+    transform: scaleX(0);
+}
+
+.sidebar__year-item span:hover::after,
+.sidebar__monthly-item a:hover::after {
+    transform: scaleX(1);
+}
+
 .sidebar__year-item {
     position: relative;
     padding-left: rem(32);

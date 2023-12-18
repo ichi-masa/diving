@@ -219,108 +219,102 @@
   </header>
 
   <main>
-    <div class="page-contact">
-
-      <!-- sub-fv -->
-      <div class="page-contact__fv sub-fv">
-        <div class="sub-fv__image">
-          <picture>
-            <source srcset="./assets/images/common/page-contact-fv.jpg" media="(min-width:768px)">
-            <img src="./assets/images/common/page-contact-fv-sp.jpg" alt="波の写真">
-          </picture>
-        </div>
-        <h1 class="sub-fv__title">Contact</h1>
+    <!-- sub-fv -->
+    <div class="sub-fv">
+      <div class="sub-fv__image">
+        <picture>
+          <source srcset="./assets/images/common/page-contact-fv.jpg" media="(min-width:768px)">
+          <img src="./assets/images/common/page-contact-fv-sp.jpg" alt="波の写真" width="1440" height="548">
+        </picture>
       </div>
-
-      <!-- breadcrumb -->
-      <div class="page-contact__breadcrumb breadcrumb">
-        <div class="breadcrumb__inner inner">
-          <ul class="breadcrumb__items">
-            <li class="breadcrumb__item">TOP</li>
-            <li class="breadcrumb__item"><img src="./assets/images/common/breadcrumb-arrow.png" alt="パンくずリスト区切り"></li>
-            <li class="breadcrumb__item">お問い合わせ</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- page-contact__content -->
-      <div class="page-contact__content layout-page layout-page--contact">
-        <div class="page-contact__inner inner">
-          <div class="page-contact__form contact-form">
-            <form action="" method="post" id="js-contactForm">
-              <div class="contact-form__error error"></div>
-              <dl class="contact-form__item">
-                <dt>
-                  お名前<span>必須</span>
-                </dt>
-                <dd>
-                  <input type="text" name="name" value="" placeholder="沖縄　太郎" required/>
-                </dd>
-              </dl>
-              <dl class="contact-form__item">
-                <dt>
-                  メールアドレス<span>必須</span>
-                </dt>
-                <dd>
-                  <input type="email" name="mail_address" value="" placeholder="aaa000@ggmail.com" required/>
-                </dd>
-              </dl>
-              <dl class="contact-form__item">
-                <dt>
-                  電話番号<span>必須</span>
-                </dt>
-                <dd>
-                  <input type="tel" name="telephone" value="" placeholder="000-0000-0000" required/>
-                </dd>
-              </dl>
-              <dl class="contact-form__item">
-                <dt class="">
-                  お問合せ項目<span>必須</span>
-                </dt>
-                <dd class="">
-                  <label><input type="radio" name="target" value="ラジオボタン1" checked/><span>ダイビング講習について</span></label>
-                  <label><input type="radio" name="target" value="ラジオボタン2"/><span>ファンダイビングについて</span></label>
-                  <label><input type="radio" name="target" value="ラジオボタン3"/><span>体験ダイビングについて</span></label>
-                </dd>
-              </dl>
-              <dl class="contact-form__item">
-                <dt>
-                  キャンペーン
-                </dt>
-                <dd class="contact-form__select">
-                  <select name="hoge" class="">
-                    <option value="">キャンペーン内容を選択</option>
-                    <option value="セレクト1">ライセンス取得</option>
-                    <option value="セレクト2">貸切体験ダイビング</option>
-                    <option value="セレクト2">ナイトダイビング</option>
-                    <option value="セレクト2">貸切ファンダイビング</option>
-                  </select>
-                </dd>
-              </dl>
-              <dl class="contact-form__item">
-                <dt>
-                  お問合せ内容<span>必須</span>
-                </dt>
-                <dd>
-                  <textarea name="contents" required></textarea>
-                </dd>
-              </dl>
-              <div class="contact-form__check">
-                <label><input type="checkbox" name="privacy_policy[]" value="個人情報の取り扱いについて同意のうえ送信します"/><span>個人情報の取り扱いについて同意のうえ<br class="u-mobile">送信します。</span></label>
-              </div>
-              <div class="contact-form__button">
-                <div class="submit-button">
-                  <input type="submit" value="Send"/><span></span>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      
+      <h1 class="sub-fv__title">Contact</h1>
     </div>
 
+    <!-- breadcrumb -->
+    <div class="breadcrumb layout-breadcrumb">
+      <div class="breadcrumb__inner inner">
+        <ul class="breadcrumb__items">
+          <li class="breadcrumb__item">TOP</li>
+          <li class="breadcrumb__item"><img src="./assets/images/common/breadcrumb-arrow.png" alt="パンくずリスト区切り"></li>
+          <li class="breadcrumb__item">お問い合わせ</li>
+        </ul>
+      </div>
+    </div>
 
+    <!-- page-contact -->
+    <div class="page-contact layout-page layout-page--contact">
+      <div class="page-contact__inner inner">
+        <div class="page-contact__form contact-form">
+          <form action="page-thanks.html" method="post" id="js-contactForm">
+            <div class="contact-form__error error"></div>
+            <dl class="contact-form__item">
+              <dt>
+                お名前<span>必須</span>
+              </dt>
+              <dd>
+                <input type="text" name="name" value="" placeholder="沖縄　太郎" required/>
+              </dd>
+            </dl>
+            <dl class="contact-form__item">
+              <dt>
+                メールアドレス<span>必須</span>
+              </dt>
+              <dd>
+                <input type="email" name="mail_address" value="" placeholder="aaa000@ggmail.com" required/>
+              </dd>
+            </dl>
+            <dl class="contact-form__item">
+              <dt>
+                電話番号<span>必須</span>
+              </dt>
+              <dd>
+                <input type="tel" name="telephone" value="" placeholder="000-0000-0000" required/>
+              </dd>
+            </dl>
+            <dl class="contact-form__item">
+              <dt class="">
+                お問合せ項目<span>必須</span>
+              </dt>
+              <dd class="">
+                <label><input type="radio" name="target" value="ラジオボタン1" checked/><span>ダイビング講習について</span></label>
+                <label><input type="radio" name="target" value="ラジオボタン2"/><span>ファンダイビングについて</span></label>
+                <label><input type="radio" name="target" value="ラジオボタン3"/><span>体験ダイビングについて</span></label>
+              </dd>
+            </dl>
+            <dl class="contact-form__item">
+              <dt>
+                キャンペーン
+              </dt>
+              <dd class="contact-form__select">
+                <select name="hoge" class="">
+                  <option value="">キャンペーン内容を選択</option>
+                  <option value="セレクト1">ライセンス取得</option>
+                  <option value="セレクト2">貸切体験ダイビング</option>
+                  <option value="セレクト2">ナイトダイビング</option>
+                  <option value="セレクト2">貸切ファンダイビング</option>
+                </select>
+              </dd>
+            </dl>
+            <dl class="contact-form__item">
+              <dt>
+                お問合せ内容<span>必須</span>
+              </dt>
+              <dd>
+                <textarea name="contents" required></textarea>
+              </dd>
+            </dl>
+            <div class="contact-form__check">
+              <label><input type="checkbox" name="privacy_policy[]" value="個人情報の取り扱いについて同意のうえ送信します"/><span>個人情報の取り扱いについて同意のうえ<br class="u-mobile">送信します。</span></label>
+            </div>
+            <div class="contact-form__button">
+              <div class="submit-button">
+                <input type="submit" value="Send"/><span></span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </main>
 
   <!-- footer -->

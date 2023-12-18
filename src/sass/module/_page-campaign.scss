@@ -1,14 +1,10 @@
 @use "global" as *;
 
-.page-campaign__breadcrumb {
-    margin-top: rem(8);
-}
-
-.page-campaign__content {
+.page-campaign {
     position: relative;
 }
 
-.page-campaign__content::before {
+.page-campaign::before {
     position: absolute;
     background-image: url(../images/common/fish2.png);
     background-repeat: no-repeat;
@@ -27,18 +23,6 @@
     }
 }
 
-.page-campaign__tags {
-    display: grid;
-    grid-template-columns: repeat(2, rem(162));
-    gap: rem(16) rem(21);
-    justify-content: center;
-
-    @include mq(md) {
-        grid-template-columns: repeat(4, rem(162));
-        gap: rem(32);
-        justify-content: flex-start;
-    }
-}
 
 .page-campaign__container {
     max-width: rem(600);
@@ -61,8 +45,4 @@
         grid-template-columns: repeat(2, 1fr);
         gap: rem(82) rem(40);
     }
-}
-
-.page-campaign__pagenavi {
-    margin-top: rem(80);
 }

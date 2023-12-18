@@ -221,7 +221,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         });
     });
 
-    //
+    // page-faqのアコーディオン
     $(function () {
         $(".js-accordion-title").on("click", function () {
             $(this).next().slideToggle(300);

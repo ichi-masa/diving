@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.category-tab__lists {
+    display: grid;
+    grid-template-columns: repeat(2, rem(162));
+    gap: rem(16) rem(21);
+    justify-content: center;
+
+    @include mq(md) {
+        grid-template-columns: repeat(4, rem(162));
+        gap: rem(32);
+        justify-content: flex-start;
+    }
+}
+
+.category-tab__list {
+    display: inline-block;
+    font-size: rem(14);
+    line-height: 1;
+    font-weight: $regular;
+    color: $green;
+    border: 1px solid $green;
+    text-align: center;
+    background-color: $white;
+}
+
+.category-tab__list:hover,
+.category-tab__list.current {
+    color: $white;
+    background-color: $green;
+}
+
+.category-tab__list a {
+    width: rem(162);
+    display: inline-block;
+    padding: rem(9) 0;
+}

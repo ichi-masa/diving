@@ -1,21 +1,17 @@
 @use "global" as *;
 
-.page-contact__breadcrumb {
-    margin-top: rem(8);
-}
-
-.page-contact__content {
+.page-contact {
     position: relative;
     max-width: rem(600);
     margin-left: auto;
     margin-right: auto;
 
     @include mq(md) {
-        max-width: none;
+        max-width: rem(750);
     }
 }
 
-.page-contact__content::before {
+.page-contact::before {
     position: absolute;
     background-image: url(../images/common/fish2.png);
     background-repeat: no-repeat;
@@ -31,12 +27,6 @@
         width: rem(301);
         height: rem(138);
         top: rem(-70);
-    }
-}
-
-.page-contact__inner.inner {
-    @include mq(md) {
-        max-width: rem(750);
     }
 }
 

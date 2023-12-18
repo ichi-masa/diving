@@ -1,10 +1,6 @@
 @use "global" as *;
 
-.archive-home__breadcrumb {
-    margin-top: rem(8);
-}
-
-.archive-home__body{
+.page-blog {
     max-width: rem(600);
     margin-left: auto;
     margin-right: auto;
@@ -14,7 +10,7 @@
     }
 }
 
-.archive-home__inner.inner {
+.page-blog__inner.inner {
     padding-left: rem(21);
     padding-right: rem(21);
 
@@ -24,7 +20,7 @@
     }
 }
 
-.archive-home__flex {
+.page-blog__body {
     display: flex;
     flex-direction: column;
 
@@ -34,7 +30,7 @@
     }
 }
 
-.archive-home__main {
+.page-blog__main {
     position: relative;
 
     @include mq(md) {
@@ -42,7 +38,7 @@
     }
 }
 
-.archive-home__main::before {
+.page-blog__main::before {
     position: absolute;
     background-image: url(../images/common/fish2.png);
     background-repeat: no-repeat;
@@ -60,7 +56,7 @@
     }
 }
 
-.archive-home__pagenavi {
+.page-blog__pagenavi {
     margin-top: rem(77);
     text-align: center;
 
@@ -69,7 +65,7 @@
     }
 }
 
-.archive-home__aside {
+.page-blog__aside {
     @include mq(md) {
         width: 27.22%;
     }

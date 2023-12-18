@@ -215,7 +215,7 @@ button,
             content: "";
             position: absolute;
             top: rem(10);
-            left: 0;
+            left: rem(20);
             display: block;
             opacity: 1;
             /*チェックマークじゃない場合は以下を変更する*/
@@ -268,7 +268,7 @@ select {
     // background-position: right 12px center;
     // background-repeat: no-repeat;
     &:focus {
-        border-color: 1px solid $border-cr;
+        border: 1px solid $border-cr;
     }
 }
 

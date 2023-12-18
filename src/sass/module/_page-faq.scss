@@ -1,22 +1,17 @@
 @use "global" as *;
 
-.page-faq__breadcrumb {
-    margin-top: rem(8);
-}
-
-.page-faq__inner.inner {
+.page-faq {
+    position: relative;
     max-width: rem(600);
+    margin-left: auto;
+    margin-right: auto;
 
     @include mq(md) {
         max-width: rem(750);
     }
 }
 
-.page-faq__content {
-    position: relative;
-}
-
-.page-faq__content::before {
+.page-faq::before {
     position: absolute;
     background-image: url(../images/common/fish2.png);
     background-repeat: no-repeat;
@@ -107,7 +102,7 @@
 }
 
 .page-faq__text {
-    display: none;
+    // display: none;
     font-size: rem(16);
     padding: rem(24) rem(16);
     border: 1px solid $green;

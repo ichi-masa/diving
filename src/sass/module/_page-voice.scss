@@ -1,10 +1,6 @@
 @use "global" as *;
 
-.page-voice__breadcrumb {
-    margin-top: rem(8);
-}
-
-.page-voice__content {
+.page-voice {
     position: relative;
     max-width: rem(600);
     margin-left: auto;
@@ -15,7 +11,7 @@
     }
 }
 
-.page-voice__content::before {
+.page-voice::before {
     position: absolute;
     background-image: url(../images/common/fish2.png);
     background-repeat: no-repeat;

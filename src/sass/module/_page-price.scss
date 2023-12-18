@@ -1,10 +1,6 @@
 @use "global" as *;
 
-.page-price__breadcrumb {
-    margin-top: rem(8);
-}
-
-.page-price__content {
+.page-price {
     position: relative;
     max-width: rem(600);
     margin-left: auto;
@@ -15,7 +11,7 @@
     }
 }
 
-.page-price__content::before {
+.page-price::before {
     position: absolute;
     background-image: url(../images/common/fish2.png);
     background-repeat: no-repeat;
