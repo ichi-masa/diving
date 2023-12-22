@@ -3,52 +3,32 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
     // ローディングアニメーション
 
-    // $(function () {
-    //     let webStorage = function () {
-    //         if (sessionStorage.getItem('access')) {
-    //             //2回目以降アクセス時の処理
-    //             $(".loading").addClass('is-active');
-    //         } else {
-    //             //初回アクセス時の処理
-    //             sessionStorage.setItem('access', 'true'); // sessionStorageにデータを保存
-    //             setTimeout(function () {
-    //                 $('.loading__title').addClass('is-active');
-    //             }, 0);
-    //             setTimeout(function () {
-    //                 $('.loading__left').addClass('is-active');
-    //             }, 500);
-    //             setTimeout(function () {
-    //                 $('.loading__right').addClass('is-active');
-    //             }, 1000);
-    //             setTimeout(function () {
-    //                 // ローディングを数秒後に非表示にする
-    //                 $(".loading").addClass('is-active');
-    //             }, 3000); // ローディングを表示する時間
-    //         }
-    //     }
-    //     webStorage();
-    // });
+    $(document).ready(function() {
+        // セッションストレージから 'visited' の値を取得
+        var visited = sessionStorage.getItem('visited');
+    
+        // 'visited' が null または undefined の場合、初回訪問とみなす
+        if (!visited) {
+            // アニメーションのクラスを追加
+            $('.loading__title').addClass('is-active');
+            $('.loading__left').addClass('is-active');
+            $('.loading__right').addClass('is-active');
+    
+            // .loading__rightのアニメーションが終了した後に.fadeOutを実行
+            $('.loading__right').on('animationend', function() {
+                $('.js-loading').fadeOut(1000); // 1秒かけてfadeOut
+            });
+    
+            // セッションストレージに 'visited' を設定（値は何でも良い）
+            sessionStorage.setItem('visited', 'true');
+        } else {
+            // 2回目以降の訪問ではローディングを非表示にする
+            $('.js-loading').hide();
+        }
+    });
+    
+    
 
-
-    // $(window).on('load', function(){
-    //     setTimeout(function () {
-    //         $('.loading__title').addClass('is-active');
-    //     }, 0);
-    //     setTimeout(function () {
-    //         $('.loading__left').addClass('is-active');
-    //     }, 500);
-    //     setTimeout(function () {
-    //         $('.loading__right').addClass('is-active');
-    //     }, 600);
-    //     setTimeout(function () {
-    //         $('.loading__title--white').addClass('is-active');
-    //     }, 1000);
-    //     setTimeout(function () {
-    //         // ローディングを数秒後に非表示にする
-    //         $(".loading").addClass('is-active');
-    //     }, 3000); // ローディングを表示する時間
-
-    // });
 
     // ハンバーガーメニュー //
     $(function () {
