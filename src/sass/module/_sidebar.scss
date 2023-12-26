@@ -114,7 +114,6 @@
     position: relative;
 }
 
-.sidebar__year-item span::after,
 .sidebar__monthly-item a::after {
     position: absolute;
     bottom: 0;
@@ -127,7 +126,6 @@
     transform: scaleX(0);
 }
 
-.sidebar__year-item span:hover::after,
 .sidebar__monthly-item a:hover::after {
     transform: scaleX(1);
 }

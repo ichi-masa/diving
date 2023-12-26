@@ -24,14 +24,15 @@
     background-color: $white;
 }
 
-.category-tab__list:hover,
-.category-tab__list.current {
-    color: $white;
-    background-color: $green;
-}
-
 .category-tab__list a {
     width: rem(162);
     display: inline-block;
     padding: rem(9) 0;
+    transition: background-color .3s;
+}
+
+.category-tab__list a:hover,
+.category-tab__list.current {
+    color: $white;
+    background-color: $green;
 }
